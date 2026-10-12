@@ -245,9 +245,9 @@ function renderContact() {
   const contacts = [
     ["WA", "+62 877-4086-8527", "https://wa.me/6287740868527"],
     ["IG", "@Pak.RW_", "https://instagram.com/pak.rw_"],
-    ["in", "Ariq Rifky Ghiffari", "https://linkedin.com"],
-    ["X", "Pak.RW_", "https://twitter.com"],
-    ["TT", "Arikpengemakantempe.", "https://tiktok.com"]
+    ["in", "Ariq Rifky Ghiffari", "https://www.linkedin.com/in/ariq-rifky-114516353/"],
+    ["X", "Pak.RW_", "https://x.com/masulcoor"],
+    ["TT", "Arikpengemakantempe.", "https://https://www.tiktok.com/@arikpengenmakantempe"]
   ];
   root.innerHTML = `<section class="fade-in">${header("Contact Us")}<div class="contact-list">${contacts.map(([icon, label, href]) => `<a class="contact-item" href="${href}" target="_blank" rel="noopener noreferrer"><span class="contact-icon" aria-hidden="true">${icon}</span><span>${label}</span><span class="contact-arrow" aria-hidden="true">↗</span></a>`).join("")}</div></section>`;
 }
