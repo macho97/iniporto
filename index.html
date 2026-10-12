@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Ariq Rifky Ghiffari — edisi buku.">
+  <title>Ariq Rifky Ghiffari | Book Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="intro-screen" id="intro-screen" role="dialog" aria-modal="true" aria-labelledby="intro-title">
+    <div class="intro-book" aria-hidden="true">
+      <div class="paper-page paper-page-left"></div>
+      <div class="paper-page paper-page-right"></div>
+    </div>
+    <div class="intro-copy">
+      <p class="intro-eyebrow">PORTOFOLIO KREATIF</p>
+      <h1 id="intro-title">Ariq Rifky Ghiffari</h1>
+      <p class="intro-subtitle">Sebuah cerita tentang ide, karya, dan perjalanan.</p>
+      <button class="intro-start" id="start-portfolio" type="button">START <span aria-hidden="true">↗</span></button>
+    </div>
+  </section>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Ganti ke mode terang">
+    <span aria-hidden="true">☼</span> Mode terang
+  </button>
+  <main id="app" class="site-shell"></main>
+  <!-- Edit isi About Me di template ini: src foto, teks, <strong>tebal</strong>, dan <em>miring</em>. -->
+  <template id="about-me-content">
+    <article class="content intro about-content">
+      <div class="about-lead">
+        <img class="intro-photo" src="Asset Asli/About Me/Group 17.png" alt="Ariq Rifky Ghiffari">
+        <p class="about-greeting">Halo, saya Ariq Rifky Ghiffari. <br><em>(Kamu juga bisa menyapaku MBAHHH!)</em> </p><p> Saya seorang kreator visual, dekorator panggung, dan content creator yang memiliki landasan karakter kuat dalam kedisiplinan dan adaptabilitas. Perjalanan saya dibentuk oleh dunia perantauan yang dinamis, mulai dari lingkungan kompetitif di Pondok Modern Darussalam Gontor hingga eksplorasi dunia digital. Dari seseorang yang awalnya introvert, saya bertransformasi menjadi pribadi yang adaptif, komunikatif, dan tertantang untuk mengubah ide abstrak menjadi karya visual yang nyata dan berdampak.</p>
+      </div>
+      <section class="about-section">
+        <h2>Pilar Utama: Seni Visual, Dekorasi Skala Besar, &amp; Komunikasi</h2>
+        <p>Kekuatan utama saya terletak pada kemampuan mengeksplorasi estetika ruang dan komunikasi visual. Saya terbiasa melihat ruang kosong atau media mentah sebagai kanvas besar yang siap dihidupkan.</p>
+        <h3>Seni Dekorasi &amp; Manajemen Panggung</h3>
+        <p>Saya memiliki pengalaman bertahun-tahun merancang dan mengeksekusi dekorasi berskala besar, termasuk untuk acara seperti Panggung Gembira dan Drama Arena. Pengalaman ini mencakup melukis manual di media triplek raksasa, mengonsep baliho, serta berkolaborasi dengan divisi elektro dan struktur panggung untuk menciptakan keselarasan estetika dan pencahayaan.</p>
+        <h3>Kepemimpinan Kreatif &amp; Manajemen Organisasi</h3>
+        <p>Kepercayaan memimpin divisi pengurus seni (ANDUKASI) dan mengelola aspek finansial serta operasional sebagai Bendahara ANKUKEDAP di OPPM mengajarkan saya bekerja terstruktur, memenuhi tenggat, dan berkolaborasi dalam tim multidisiplin.</p>
+      </section>
+      <section class="about-section">
+        <h2>Jiwa Kreatif: Content Creator &amp; Storytelling</h2>
+        <p>Bagi saya, seni tidak berhenti di panggung fisik, tetapi juga hadir di ruang digital melalui content creation. Saya menggunakan kepekaan visual, pemahaman hierarki estetika, dan kemampuan <strong>storytelling</strong> untuk menciptakan konten yang menarik, kreatif, dan relevan bagi audiens.</p>
+        <p>Proses pembuatan konten—mulai dari penggalian ide, penyusunan konsep, eksekusi visual, hingga interaksi dengan audiens—menjadi cara saya menyalurkan jiwa seni ke dalam bentuk yang dinamis dan modern.</p>
+      </section>
+      <section class="about-section">
+        <h2>Kecakapan Digital &amp; Teknis</h2>
+        <p>Untuk mendukung proses kreatif, saya terus membekali diri dengan pemahaman teknologi digital dan desain. Saya adaptif menggunakan tools digital untuk visualisasi ide, perancangan tata letak, serta penyampaian pesan dan performa konten. Kecakapan ini membantu saya mengeksekusi karya secara efisien dan mengikuti perkembangan tren.</p>
+      </section>
+      <section class="about-section">
+        <h2>Mengapa Bekerja dengan Saya?</h2>
+        <p>Saya membawa etos kerja perantau yang tangguh, kedisiplinan, ketajaman estetika, dan cara berpikir kreatif. Saya memperhatikan hasil visual sekaligus kolaborasi, manajemen waktu, dan bagaimana sebuah karya menyampaikan pesan yang kuat kepada audiens.</p>
+      </section>
+    </article>
+  </template>
+  <!-- Edit Education, Projects, dan Archive di template berikut. Tiap item boleh diubah, ditambah, atau dihapus. -->
+  <template id="education-content">
+    <ol class="education-list">
+      <li class="education-card"><img src="Asset Asli/Educational History/TK AL amin.png" alt="Foto TK Al Amin Jember"><span class="education-number">01</span><div><h2><a class="education-link" href="#education/tk" data-page="education-tk">TK Al Amin Jember ↗</a></h2><p>2010–2011</p></div></li>
+      <li class="education-card"><img src="Asset Asli/Educational History/SD albaitul amin.png" alt="Foto SD Al Baitul Amien Jember"><span class="education-number">02</span><div><h2><a class="education-link" href="#education/sd" data-page="education-sd">SD Al Baitul Amien Jember ↗</a></h2><p>2011–2017</p></div></li>
+      <li class="education-card"><img src="Asset Asli/Educational History/PM Darussalam Gontor 1.png" alt="Foto PM Darussalam Gontor 1"><span class="education-number">03</span><div><h2><a class="education-link" href="#education/gontor-1" data-page="education-gontor-1">PM Darussalam Gontor 1 ↗</a></h2><p>2017–2022</p></div></li>
+      <li class="education-card"><img src="Asset Asli/Educational History/PM Darul Ma'rifat.png" alt="Foto PM Darul Ma'rifat Gontor Kampus 3"><span class="education-number">04</span><div><h2><a class="education-link" href="#education/gontor-3" data-page="education-gontor-3">PM Darul Ma'rifat Gontor Kampus 3 ↗</a></h2><p>2022–2023</p></div></li>
+      <li class="education-card"><img src="Asset Asli/Educational History/PENS.png" alt="Foto Politeknik Elektronika Negeri Surabaya"><span class="education-number">05</span><div><h2><a class="education-link" href="#education/pens" data-page="education-pens">Politeknik Elektronika Negeri Surabaya ↗</a></h2><p>2024–Sekarang</p></div></li>
+    </ol>
+  </template>
+  <!-- Edit isi detail tiap sekolah di sini. Kamu bebas mengatur gambar dan susunan HTML-nya. -->
+  <template id="education-details">
+    <article data-school="tk" class="content education-detail education-detail-tk">
+      <p class="eyebrow">PENDIDIKAN AWAL · 2010–2011</p>
+      <h2>TK Al Amin Jember</h2>
+      <div class="tk-story">
+        <h3 class="tk-story-title">Jejak Awal: Menanam Imajinasi dan Keceriaan di Masa Taman Kanak-Kanak (TK)</h3>
+        <figure class="tk-photo tk-photo-small">
+          <img src="Asset Asli/Educational History/Foto TK 1.png" alt="Foto Ariq saat masa TK">
+        </figure>
+        <p>Sebelum melangkah ke dunia perantauan dan organisasi yang kompetitif, fondasi karakter saya dimulai dari dunia yang penuh warna di masa Taman Kanak-Kanak (TK).</p>
+        <p>Seperti masa kecil anak-anak pada umumnya, fase ini adalah ruang murni untuk bermain, bereksperimen, dan mengenal dunia luar.</p>
+        <p>Meskipun sederhana, masa TK memberikan kontribusi awal bagi pembentukan diri saya melalui dua hal penting:</p>
+        <h4>Eksplorasi Kreativitas Tanpa Batas</h4>
+        <p>Lewat aktivitas sederhana seperti menggambar bebas, mewarnai, dan menyusun balok mainan, di sinilah motorik halus dan daya imajinasi saya pertama kali terasah. Kegemaran saya pada dunia seni visual dan dekorasi yang saya tekuni hari ini berakar dari coretan-coretan kertas di meja kelas TK.</p>
+        <h4>Belajar Bersosialisasi &amp; Berbagi</h4>
+        <p>Sebagai anak yang awalnya memiliki kecenderungan introvert, momen bermain bersama di taman bermain, mengantre giliran perosotan, dan berbagi mainan dengan teman sebaya adalah simulasi pertama saya dalam memahami konsep komunikasi, empati, dan kerja sama tim dalam bentuk yang paling sederhana.</p>
+        <p>Masa TK mungkin penuh dengan tawa dan permainan, namun dari sanalah rasa ingin tahu (curiosity) dan keberanian saya untuk mulai bersentuhan dengan dunia luar pertama kali tumbuh.</p>
+        <figure class="tk-photo tk-photo-memory">
+                <img src="Asset Asli/Educational History/Foto tk 2.png" alt="Foto kenangan Ariq saat TK">
+          <figcaption>Kenangan masa TK, 2010.</figcaption>
+        </figure>
+      </div>
+      <a class="text-link" href="#education" data-page="education">← Kembali ke riwayat pendidikan</a>
+    </article>
+    <article data-school="sd" class="content education-detail education-detail-centered">
+      <p class="eyebrow">PENDIDIKAN DASAR · 2011–2017</p>
+      <h2>SD Al Baitul Amien Jember</h2>
+      <div class="tk-story">
+        <h3 class="tk-story-title">Fondasi Kompetitif dan Eksplorasi Sains di SD Al Baitul Amin Jember</h3>
+        <p>Setelah melewati masa-masa ceria di Taman Kanak-Kanak, langkah akademis saya berlanjut di SD Al Baitul Amin Jember (2011 – 2017). Fase enam tahun di sekolah dasar ini menjadi milestone krusial di mana minat saya terhadap ilmu pengetahuan, fokus, dan mentalitas kompetitif mulai terbentuk dan teruji di berbagai ajang formal.</p>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto sd.png" alt="Kenangan Ariq di SD Al Baitul Amien Jember">
+          <figcaption>Kenangan di SD Al Baitul Amien Jember.</figcaption>
+        </figure>
+        <p>Di sekolah ini, saya berhasil mengasah potensi akademis melalui beberapa pencapaian dan rekam jejak penting:</p>
+        <ul>
+          <li><h4>Konsistensi Akademik di Lini Depan:</h4>
+          Pada fase awal sekolah dasar (Kelas 1 hingga Kelas 3), saya berhasil mempertahankan performa belajar di tingkat optimal dan secara konsisten meraih Peringkat 1 di kelas. Fase ini melatih kedisiplinan belajar dan rasa ingin tahu saya terhadap hal-hal baru.</li>
+          <li><h4>Ajang Olimpiade Sains Nasional (OSN) Tingkat Provinsi (Kelas 2):</h4>
+          Ketertarikan saya pada ilmu terapan membawa saya terpilih untuk berkompetisi di ajang Olimpiade Sains Nasional (OSN). Melalui seleksi yang ketat, saya berhasil menembus batasan lokal dan berjuang mewakili sekolah hingga ke Tingkat Provinsi. Meskipun langkah menuju tingkat nasional terhenti di fase ini, pengalaman ini memberikan pelajaran berharga mengenai ketahanan mental, persiapan strategis, dan skala kompetisi yang luas.</li>
+          <li><h4>Penghargaan Kompetisi Bahasa Inggris Tingkat Kabupaten (Kelas 3):</h4>
+          Selain di bidang sains, saya juga mengeksplorasi kemampuan komunikasi linguistik. Saya berhasil meraih penghargaan Juara Harapan 10 dalam Lomba Bahasa Inggris Tingkat Kabupaten. Pencapaian ini menjadi fondasi awal saya dalam memahami bahasa asing, yang di kemudian hari sangat membantu saya saat mengemban amanah sebagai Bagian Bahasa di organisasi pondok modern.</li>
+          <li><h4>Eksplorasi Berkelanjutan di Bidang IPA & Sains:</h4>
+          Sepanjang masa sekolah dasar, saya aktif mendaftarkan diri dan berpartisipasi dalam berbagai kompetisi perlombaan IPA dan Sains. Bagi saya, setiap perlombaan sains bukan sekadar ajang berburu trofi, melainkan ruang eksperimen untuk melatih logika berpikir terstruktur dan kemampuan memecahkan masalah (problem-solving).</li>
+        </ul>
+        <p>Masa-masa di SD Al Baitul Amin Jember telah membuktikan bahwa jauh sebelum saya bergelut di industri multimedia dan kepemimpinan organisasi, saya telah ditempa untuk menjadi seorang pembelajar yang gigih, berorientasi pada detail, dan tidak takut menghadapi tantangan kompetisi yang besar. </p>
+      </div>
+      <a class="text-link" href="#education" data-page="education">← Kembali ke riwayat pendidikan</a>
+    </article>
+    <article data-school="gontor-1" class="content education-detail education-detail-centered">
+      <p class="eyebrow">PENDIDIKAN · 2017–2022</p>
+      <h2>PM Darussalam Gontor 1</h2>
+      <div class="tk-story">
+        <h3 class="tk-story-title">Mengukir Jati Diri di Gontor: Perjalanan Transformasi dari Seorang Introvert Menjadi Pemimpin Kreatif</h3>
+        <h4>Pendahuluan: Langkah Awal Menuju Dunia Perantauan</h4>
+        <p>Perjalanan hidup dan pembentukan karakter saya dimulai dari sebuah langkah berani: merantau dan menuntut ilmu di Pondok Modern Darussalam Gontor, Mlarak, Ponorogo. Tempat ini bukan sekadar lembaga pendidikan bagi saya, melainkan gerbang awal yang menumbuhkan kecintaan saya pada dunia perantauan, kemandirian, dan adaptasi di lingkungan yang dinamis.
+Lahir sebagai seorang yang cenderung introvert, menghabiskan waktu selama 5 tahun di Gontor memaksa saya untuk keluar dari zona nyaman. Di tengah ekosistem yang penuh disiplin dan tantangan ini, saya mulai membuka diri, menggali potensi tersembunyi, dan menemukan jati diri yang sesungguhnya.</p>
+        <h4>2. Rekam Jejak Akademik & Kemampuan Adaptasi</h4>
+        <p>Sistem pendidikan di Gontor menerapkan penempatan kelas yang kompetitif berdasarkan tingkat evaluasi kecerdasan dan dinamika santri di setiap tahunnya. Berada di lingkungan yang kompetitif ini melatih saya untuk memiliki mental yang tangguh dan selalu siap beradaptasi dengan lingkungan baru. Berikut adalah riwayat penempatan kelas saya:</p>
+        <ul>
+          <li>Tahun Pertama: Kelas 1B</li>
+          <li>Tahun Kedua: Kelas 2D</li>
+          <li>Tahun Ketiga: Kelas 3D</li>
+          <li>Tahun Keempat: Kelas 4H</li>
+          <li>TahunKelima: Kelas 5F</li>
+        </ul>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM 1.png" alt="Kenangan Ariq di PM Darussalam Gontor 1">
+          <figcaption>Pencapaian Nilai Terbaik Kelas 4</figcaption>
+        </figure>
+        <h4>3. Pengalaman Bidang Kepanduan, Kepemimpinan, & Pengelolaan Organisasi</h4>
+        <p>Pendidikan non-akademik di Gontor menjadi katalis utama perubahan karakter saya, terutama melalui gerakan kepramukaan:</p>
+        <ul>
+          <li><strong>Pasukan Khusus (Pasus) Pramuka Gugus Depan 15089 - 17 (Tahun Kedua):</strong> Ini adalah titik balik terbesar dalam hidup saya. Melalui Pasus, saya ditempa secara mental dan fisik. Di sinilah saya membangun fondasi karakter yang kuat: ketegasan, kedisiplinan tinggi, rasa tanggung jawab, kepemimpinan, solidaritas, serta rasa kekeluargaan yang erat.</li>
+          <li><strong>Pengurus Andalan Gugus Depan Urusan Karya dan Seni / ANDUKASI (Tahun Ketiga):</strong> Saya dipercaya untuk naik tingkat menjadi pengurus yang bertanggung jawab atas pengelolaan Majalah Dinding (Mading) dan seluruh properti dekorasi untuk kegiatan kepramukaan berskala besar.</li>
+          <li><strong>Kompetisi Tingkat Nasional: Pengalaman kepanduan saya diperkuat dengan keterlibatan langsung dalam ajang bergengsi, antara lain:</strong> 
+          <ul>
+            <li>LP3 (Lomba Perkemahan Penegak dan Penggalang) tingkat pondok pesantren nasional.</li>
+            <li>LPKA (Lomba Pramuka Khutbatul Arsy).</li>
+          </ul>
+          </li>
+        </ul>
+         <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM 4 pg.png" alt="Acara Drama Arena di PM Darussalam Gontor 1">
+          <figcaption>Acara Drama Arena di PM Darussalam Gontor 1.</figcaption>
+        </figure>
+        <h4>4. Pengalaman Bidang Seni, Kreativitas, & Dekorasi Proyek (Hard Skills)</h4>
+        <p>Seiring berjalannya waktu, minat saya mengerucut kuat di bidang seni visual dan dekorasi ruang. Di Gontor, bagian dekorator dituntut memiliki ketahanan fisik dan kreativitas tinggi karena media yang digunakan berskala besar:</p>
+        <ul>
+          <li><strong>Dekorator Kepanitiaan Acara Besar (Tahun Keempat): </strong> Saya selalu dipercaya untuk memegang posisi dekorator. Tugas kami meliputi pembuatan mading, baliho, dan background panggung utama menggunakan media triplek. Di sini saya mengasah kemampuan melukis manual berskala besar (mural/panggung).</li>
+          <li><strong>Kolaborasi Lintas Divisi: </strong> Dalam pengerjaannya, saya terbiasa berkolaborasi dengan Bagian Elektro (untuk instalasi pencahayaan seni) dan Bagian Persidangan (pembuatan struktur panggung berat) untuk menyelaraskan konsep pengecatan dan estetika visual panggung.</li>
+          <li><strong>Dekorator Drama Arena (Tahun Kelima):</strong> Saya berkontribusi dalam tim dekorasi untuk Drama Arena, sebuah pentas seni tahunan yang sangat bergengsi dan menjadi tolak ukur kreativitas santri di Gontor.</li>
+        </ul>
+        <h4>5. Pengalaman Manajemen, Sosial, & Operasional (Soft Skills)</h4>
+        <p>Pada tahun kelima, tanggung jawab saya diperluas ke ranah manajemen manusia dan operasional harian:</p>
+        <ul>
+          <li><strong>Pengurus Asrama (Bagian Kesehatan & Bahasa):</strong> Saya mengemban amanah untuk mengayomi, mendisiplinkan, dan mengurus kebutuhan santri junior (kelas 2 dan 3). Tugas ini mengasah kemampuan komunikasi interpersonal, konseling, dan manajemen konflik saya.</li>
+          <li><strong>Pengurus Kantin (Manajemen Operasional & Supply Chain):</strong> Di akhir tahun, saya ditugaskan di bagian kantin. Tanggung jawab saya meliputi:
+          <ul>
+            <li>Merancang estetika dan dekorasi ruang kantin agar menarik.</li>
+            <li>Menjaga dan mengelola operasional harian kantin.</li>
+            <li>Membantu proses supply chain (mencari dan menyediakan bahan baku masakan) bersama para pekerja kantin.</li>
+          </ul>
+          </li>
+        </ul>
+        <h4>6. Kesimpulan: Transformasi Karakter & Kesiapan Menghadapi Dunia Nyata</h4>
+        <p>Nilai yang Saya Bawa Hari Ini Lima tahun menempa diri di Pondok Modern Darussalam Gontor telah mengubah saya menjadi pribadi yang utuh. Dari seorang introvert, saya bertransformasi menjadi individu yang kreatif, memiliki kepemimpinan kuat, terbiasa bekerja di bawah tekanan, dan mampu berkolaborasi dalam tim multidisiplin. Semua pengalaman visual, organisasi, dan manajerial ini adalah aset berharga yang selalu saya bawa dalam setiap proyek profesional yang saya kerjakan saat ini.</p>
+          <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM 3.png" alt="Kelulusan Ariq dari PM Darussalam Gontor 1">
+          <figcaption>kelulusan Ariq dari PM Darussalam Gontor 1.</figcaption>
+        </figure>
+        </div>
+      <a class="text-link" href="#education" data-page="education">← Kembali ke riwayat pendidikan</a>
+    </article>
+    <article data-school="gontor-3" class="content education-detail education-detail-centered">
+      <p class="eyebrow">PENDIDIKAN · 2022–2023</p>
+      <h2>PM Darul Ma'rifat Gontor Kampus 3</h2>
+      <div class="tk-story">
+        <h3 class="tk-story-title">Babak Baru di Gontor Kampus 3: Puncak Kepemimpinan, Kreativitas, dan Pengabdian di Kelas 6</h3>
+        <h4>1. Rigoritas Akademik: Kurikulum Akhir & Fase Kelulusan Kelas 6</h4>
+        <p>Menjadi santri Kelas 6 di Gontor berarti siap menghadapi kurikulum kelulusan yang sangat komprehensif dan menguji ketahanan mental. Di tahun ini, fokus akademik saya meliputi:</p>
+        <ul>
+          <li><strong>Ujian Lisan & Ujian Tulis Komprehensif:</strong> Mengujikan akumulasi seluruh materi pelajaran yang telah dipelajari sejak Kelas 1 hingga Kelas 6 tanpa terkecuali.</li>
+          <li><strong>Amaliyah Tadris (Praktik Mengajar):</strong> Salah satu mahkota kurikulum Kelas 6, di mana saya diwajibkan mempraktikkan metodologi pengajaran (pedagogy) secara langsung di depan kelas, yang kemudian dikritik dan dievaluasi secara ketat oleh guru pembimbing dan sesama rekan santri.</li>
+        </ul>
+        <h4>2. Puncak Kepemimpinan & Tanggung Jawab Organisasi</h4>
+        <p>Dekorator Panggung Gembira Di bidang seni visual, saya kembali dipercaya untuk berkontribusi dalam acara puncak yang paling bergengsi di Gontor, yaitu Panggung Gembira (PG) kelas 6</p>
+        <ul>
+          <li>Sebagai bagian dari tim Dekorasi, saya bertanggung jawab merancang, melukis, dan membangun latar panggung raksasa yang menjadi pusat visual seluruh pertunjukan. Pengalaman ini mengasah kemampuan saya dalam manajemen proyek kreatif berskala besar, bekerja dengan deadline ketat, dan mengeksekusi konsep visual yang megah.</li>
+          <li>Pengalaman ini mengasah kemampuan saya dalam manajemen proyek kreatif berskala besar, bekerja dengan deadline ketat, dan mengeksekusi konsep visual yang megah.</li>
+        </ul>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM3 1.png" alt="Kenangan Ariq di PM Darul Ma'rifat Gontor Kampus 3">
+          <figcaption>Panggung Gembira Kelas 6</figcaption>
+        </figure>
+        <h4>3. Kepemimpinan & Penegakan Disiplin: Bagian Bahasa (Organisasi Bulan Syawwal)</h4>
+        <p>Pada masa awal tahun ajaran baru, tepatnya dalam struktur Organisasi Bulan Syawwal, saya ditunjuk sebagai Bagian Disiplin (Bahasa).</p>
+        <ul>
+          <li>Tugas utama saya adalah mengawasi, mengedukasi, dan menegakkan disiplin penggunaan bahasa resmi (Arab dan Inggris) bagi seluruh santri.</li>
+          <li>Posisi ini melatih kemampuan komunikasi persuasif saya, ketegasan, serta manajemen konflik di lingkungan komunitas yang besar.</li>
+        </ul>
+        <h4>4. Pengalaman Finansial & Operasional: </h4>
+        <p>OPPM - Koordinator Pramuka (ANKUKEDAP) Ketika amanat OPPM (Organisasi Pelajar Pondok Modern) resmi diserahkan, saya dipercaya untuk mengemban posisi di Koordinator Gerakan Pramuka, spesifiknya pada divisi ANKUKEDAP (Andalan Koordinator Urusan Kedai Pramuka) dengan amanah sebagai Bendahara. Tanggung jawab saya meliputi:</p>
+        <ul>
+          <li>Manajemen Keuangan: Mengelola arus kas, pembukuan, dan laporan keuangan kedai pramuka.</li>
+          <li>Operasional & Penjualan: Mengatur ketersediaan dan penjualan atribut resmi kepramukaan.</li>
+          <li>Manajemen Stand Acara: Mengoordinasi dan mengelola stand komersial kedai pramuka saat diadakannya perhelatan lomba pramuka besar maupun acara kepramukaan lainnya di pondok.</li>
+        </ul>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM3 3.png" alt="Kenangan Ariq di PM Darul Ma'rifat Gontor Kampus 3">
+          <figcaption>Perfotoan Bagian Kedai Pramuka</figcaption>
+        </figure>
+      <h4>Fase Pengabdian Akhir Tahun :</h4>
+      <p>Asisten Guru & Multi-Tasking Menjelang akhir masa studi, kepercayaan yang diberikan kepada saya semakin meluas. Saya ditunjuk untuk menjadi asisten para guru dalam berbagai lini operasional penting pondok, di antaranya:</p>
+      <ul>
+        <li>Penguji Ujian Lisan: Dipercaya oleh jajaran guru untuk bertindak sebagai penguji pembantu dalam menilai performa akademis santri junior saat ujian lisan.</li>
+        <li>Asisten Kafe Guru: Mengelola operasional harian tempat rehat dan konsumsi para tenaga pendidik.</li>
+        <li>Asisten La Tansa Tea: Terlibat dalam manajemen pelayanan dan unit usaha kuliner pondok.</li>
+        <li>Serta berbagai kepanitiaan krusial lainnya yang membutuhkan koordinasi cepat dan tanggung jawab tinggi.</li>
+      </ul>
+      <h4>Kesimpulan: Portofolio Karakter Akhir</h4>
+      <p>Tahun terakhir saya di Gontor Kampus 3 Darul Ma'rifat adalah pembuktian atas kapasitas diri saya. Dari mengelola keuangan organisasi di OPPM, mengeksekusi seni panggung raksasa, hingga lulus dari ujian komprehensif Kelas 6 yang legendaris, saya berhasil membentuk diri menjadi seorang multitasker yang handal, desainer visual yang visioner, serta pemimpin yang akuntabel.</p>
+    <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto PM3 5.png" alt="Kenangan Ariq di PM Darul Ma'rifat Gontor Kampus 3">
+          <figcaption>Foto Personalia Staff Koordinator Gerakan Pramuka</figcaption>
+        </figure>
+    </div>
+      <a class="text-link" href="#education" data-page="education">← Kembali ke riwayat pendidikan</a>
+    </article>
+    <article data-school="pens" class="content education-detail education-detail-centered">
+      <p class="eyebrow">PENDIDIKAN TINGGI · 2024–SEKARANG</p>
+      <h2>Politeknik Elektronika Negeri Surabaya</h2>
+      <div class="tk-story">
+        <h3 class="tk-story-title">Rekayasa Teknologi Multimedia: Transformasi Kreativitas Manual ke Ranah Digital Terintegrasi di Politeknik Elektronika Negeri Surabaya</h3>
+        <h4>1. Pendekatan Akademis: Jembatan Menuju Dunia Rekayasa Digital</h4>
+        <p>Setelah melewati berbagai tempaan karakter, kedisiplinan, dan kepemimpinan di pondok modern, saya melanjutkan langkah akademis ke jenjang pendidikan tinggi di Politeknik Elektronika Negeri Surabaya (PENS) dengan mengambil program studi Teknologi Rekayasa Multimedia. Berada di kampus yang terkenal dengan iklim akademisnya yang kompetitif dan disiplin tinggi ini, fokus utama saya adalah mentransformasikan seluruh pengalaman visual manual serta ketelitian kerja yang telah saya miliki sebelumnya ke dalam penguasaan teknologi digital modern. Edukasi di PENS tidak hanya menguji kemampuan estetika visual saya, melainkan menuntut penguasaan logika pemrograman, arsitektur jaringan multimedia, hingga penjaminan mutu perangkat lunak (software quality assurance).</p>
+        <h4>2. Rekam Jejak Kompetensi: Eksplorasi Spektrum Multimedia Terintegrasi</h4>
+        <p>Sistem pendidikan praktik di PENS menantang saya untuk mengeksplorasi spektrum multimedia yang sangat luas dan adaptif. Selama menempuh studi, saya berhasil menguasai dan menyelaraskan empat pilar kompetensi utama:</p>
+        <ul>
+          <li>Desain Antarmuka (UI/UX Design): Mengadopsi metode User-Centered Design menggunakan Figma untuk merancang arsitektur informasi yang kompleks menjadi antarmuka yang simpel, interaktif, dan mudah dikenali oleh pengguna.</li>
+          <li>Rekayasa Web (Web Development): Membangun fondasi arsitektur frontend web menggunakan HTML, CSS, dan framework Bootstrap untuk menghasilkan platform digital dan e-commerce yang responsif.</li>
+          <li>Pemrograman Aplikasi Mobile (Mobile Development): Mendalami logika teknologi video serta pengembangan aplikasi bergerak yang dinamis menggunakan framework Flutter dan bahasa Dart.</li>
+          <li>Teknologi Imersif (Mixed Reality Development): Memasuki lini terdepan teknologi masa depan dengan memanfaatkan Unity dan perangkat canggih HoloLens 2 untuk rekayasa sistem multiplayer lintas platform.</li>
+        </ul>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto pens 1.png" alt="Kenangan Ariq di Politeknik Elektronika Negeri Surabaya">
+          <figcaption>MC Acara Prodi</figcaption>
+        </figure>
+        <h4>3. Pengalaman Proyek dan Implementasi Berbasis Laboratorium</h4>
+        <p>Model pembelajaran berbasis proyek (Project-Based Learning) di PENS melatih saya untuk terbiasa mengelola siklus hidup pengembangan produk digital melalui kolaborasi tim multidisiplin:</p>
+        <ul>
+          <li>Fase Inisiasi dan Desain (Product Ideation): Bertindak sebagai pencari ide produk yang bertugas menyusun alur pengalaman pengguna, merancang sketsa kasar, hingga mematangkan draf visual di Figma sebagai cetak biru utama bagi tim pengembang.</li>
+          <li>Fase Pengembangan Teknis (Development): Terlibat langsung dalam penyusunan struktur kode frontend, integrasi manajemen basis data CRUD (Stok Makanan dan Pendaftaran Toko), hingga konfigurasi arsitektur jaringan sinkronisasi data real-time.</li>
+          <li>Fase Penjaminan Mutu (Quality Assurance): Melakukan pengujian fungsionalitas sistem lintas perangkat keras (seperti sinkronisasi data antara HoloLens 2 dan Android) untuk memastikan produk bebas dari kendala teknis sebelum siap diimplementasikan.</li>
+        </ul>
+        <h4>4. Analisis Teknis</h4>
+        <p>Penyelesaian Masalah secara Metodologis Melalui ekosistem laboratorium di PENS, saya berhasil menyelaraskan teori ilmiah dengan kebutuhan industri modern. Saya terlatih untuk menyelesaikan masalah rekayasa secara terstruktur, seperti mengintegrasikan algoritma kalibrasi pemrosesan citra digital dengan pipeline otomatisasi multimedia server, hingga memecahkan kendala pembacaan sensor dan sinkronisasi data real-time pada sistem jaringan multiplayer lintas perangkat keras. Proses ini secara matang membentuk pola pikir saya menjadi seorang teknisi yang solutif, jeli terhadap detail, dan adaptif terhadap pembaruan teknologi.</p>
+        <h4>5. Kesimpulan: Nilai yang Saya Bawa ke Industri</h4>
+        <p>Pendidikan di Politeknik Elektronika Negeri Surabaya berhasil memvalidasi kapasitas saya sebagai seorang Multimedia Engineer yang komprehensif. PENS telah mengubah paradigma berpikir saya, membuktikan bahwa kreativitas visual yang kuat akan memberikan dampak yang jauh lebih besar ketika didukung oleh fondasi logika pemrograman yang matang, ketepatan penjaminan mutu, serta penguasaan teknologi masa depan yang inklusif dan berdaya guna tinggi di masyarakat.</p>
+        <figure class="education-story-photo">
+          <img src="Asset Asli/Educational History/Foto pens 2.png" alt="Kenangan Ariq di Politeknik Elektronika Negeri Surabaya">
+          <figcaption>Foto Personalia Prodi Teknologi Rekayasa Multimedia Angkatan 2024</figcaption>
+        </figure>
+      </div>
+      <a class="text-link" href="#education" data-page="education">← Kembali ke riwayat pendidikan</a>
+    </article>
+  </template>
+  <!-- Edit artikel Experience di sini. Tambahkan paragraf, subjudul, daftar, dan foto di dalam .tk-story. -->
+  <template id="experience-details">
+    <article data-experience="teacher" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN KERJA</p>
+        <h3 class="tk-story-title" data-experience-title>Teacher</h3>
+        <p class="experience-detail-organization">Pondok Modern Tgk. Chiek Oemar Diyan, Indrapuri, Aceh Besar</p>
+        <p>Sebagai bagian dari komitmen kelulusan dan pemenuhan syarat ijazah, saya mendedikasikan satu tahun penuh untuk mengabdi sebagai tenaga pendidik di Pondok Modern Tgk. Chiek Oemar Diyan. Masa pengabdian ini menjadi fase transformatif: setelah ditempa sebagai santri, saya berdiri di garda depan sebagai mentor, pendidik, dan pengelola operasional yang ikut bertanggung jawab atas kehidupan serta pembinaan ratusan santri.</p>
+        <figure class="education-story-photo">
+          <img src="../Assets/Figma/Prototype2/experience-01.png" alt="Pengalaman mengajar di Oemar Diyan Boarding School">
+          <figcaption>Dokumentasi pengalaman di Oemar Diyan Boarding School.</figcaption>
+        </figure>
+        <h4>1. Manajemen Krisis dan Kedisiplinan Santri</h4>
+        <p>Sebagai bagian dari Bagian Pengasuhan Santri, saya mengemban tanggung jawab mendampingi, mengawasi, dan menjaga kedisiplinan santri sepanjang siklus kegiatan harian—dari mereka bangun pagi hingga beristirahat pada malam hari.</p>
+        <ul>
+          <li>Mengelola dinamika kehidupan asrama, menegakkan regulasi pondok, dan membentuk kemandirian santri.</li>
+          <li>Menangani konflik interpersonal secara langsung dengan pendekatan yang tegas, persuasif, dan proporsional.</li>
+          <li>Mengembangkan kepemimpinan, komunikasi, manajemen konflik, ketahanan mental, serta kemampuan mengambil keputusan taktis.</li>
+        </ul>
+        <h4>2. Manajemen Proyek Kreatif: Arena Gembira</h4>
+        <p>Saya dipercaya menjadi Ketua Pembimbing dari unsur Guru Pengabdian untuk menyukseskan Arena Gembira, pentas seni tahunan karya santri kelas 4. Dalam peran ini, saya mengarahkan dan mengoordinasikan berbagai divisi sejak tahap perencanaan hingga hari pertunjukan.</p>
+        <ul>
+          <li><strong>Estetika dan tata ruang:</strong> Membimbing penyusunan konsep panggung, pembuatan lukisan latar berukuran besar, dan penataan taman.</li>
+          <li><strong>Teknis dan operasional:</strong> Mengoordinasikan divisi elektro, termasuk pencahayaan dan tata suara, serta mengawal kebutuhan logistik persiapan.</li>
+          <li><strong>Manajemen acara:</strong> Menyusun alur dan rundown agar pertunjukan berjalan tertata, dinamis, dan menarik bagi audiens.</li>
+        </ul>
+        <p>Di luar proyek tersebut, saya juga menjadi pembimbing bidang dekorasi santri. Saya membagikan keterampilan seni panggung, pembuatan majalah dinding (mading), dan visualisasi media kepada para santri junior.</p>
+        <h4>3. Kompetensi Akademik dan Pedagogi</h4>
+        <p>Di ranah akademis, saya mengajar dan membantu menjaga mutu evaluasi pembelajaran santri.</p>
+        <ul>
+          <li><strong>Tenaga pengajar:</strong> Mengajar Bahasa Inggris, termasuk komunikasi dan tata bahasa, serta Mahfudzot yang memuat kata-kata mutiara Islam untuk pembentukan karakter.</li>
+          <li><strong>Penguji ujian lisan:</strong> Dipercaya pimpinan pondok untuk mengawasi jalannya ujian lisan dan memberikan penilaian secara objektif.</li>
+        </ul>
+        <h4>4. Kontribusi Fisik dan Pengembangan Infrastruktur</h4>
+        <p>Pengabdian saya juga mencakup keterlibatan langsung dalam proyek pembangunan dan pengembangan fasilitas pondok. Berkolaborasi dengan para pekerja, saya membantu pekerjaan lapangan sekaligus belajar tentang kerja keras, pengelolaan material, dan kontribusi nyata bagi kenyamanan generasi santri berikutnya.</p>
+        <h4>5. Nilai yang Saya Bawa ke Dunia Kerja</h4>
+        <p>Satu tahun pengabdian di Pondok Modern Tgk. Chiek Oemar Diyan membentuk saya sebagai pemimpin operasional yang adaptif dan kreatif. Saya teruji dalam mengelola manusia dan kedisiplinan, mengajar, memimpin proyek seni berskala besar, serta menjalankan tanggung jawab organisasi dengan konsisten. Perpaduan pengalaman manajerial, kepemimpinan, dan kreativitas ini menjadi bekal untuk memberikan kontribusi maksimal di dunia kerja profesional.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+    <article data-experience="worker" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN KERJA</p>
+        <h3 class="tk-story-title" data-experience-title>Worker</h3>
+        <p class="experience-detail-organization">CV. Gajah Mada Plastik</p>
+        <p>Pengalaman profesional saya di industri manufaktur dan distribusi diperkuat melalui peran operasional di CV. Gajah Mada Plastik. Saya terlibat langsung dalam rantai pasok, membantu kelancaran proses harian mulai dari operasional gudang hingga memastikan produk sampai ke toko mitra. Pengalaman ini mengasah ketahanan fisik, ketelitian, manajemen waktu, serta tanggung jawab terhadap aset perusahaan dan kepuasan pelanggan.</p>
+        <figure class="education-story-photo">
+          <img src="../Assets/Figma/Prototype2/experience-02.png" alt="Pengalaman bekerja di CV. Gajah Mada Plastik">
+          <figcaption>Dokumentasi pengalaman di CV. Gajah Mada Plastik.</figcaption>
+        </figure>
+        <h4>1. Manajemen Distribusi dan Transportasi</h4>
+        <p>Sebagai petugas pengiriman barang, saya memastikan distribusi produk plastik dari gudang pusat ke jaringan toko mitra berlangsung aman, tepat waktu, dan efisien.</p>
+        <ul>
+          <li><strong>Mobilitas dan navigasi:</strong> Mengoperasikan armada mobil pengiriman perusahaan dan memilih rute yang efektif untuk menjangkau berbagai lokasi toko dengan efisien.</li>
+          <li><strong>Keamanan dan akurasi barang:</strong> Menjaga muatan selama perjalanan agar tetap aman, serta mencocokkan jumlah barang dengan surat jalan sebelum dan sesudah pengiriman.</li>
+          <li><strong>Pelayanan pelanggan:</strong> Berinteraksi langsung dengan pemilik atau staf toko saat serah terima barang dan mendukung proses bongkar muat secara ramah dan profesional.</li>
+        </ul>
+        <h4>2. Operasional Gudang dan Pengelolaan Barang</h4>
+        <p>Sebelum barang didistribusikan, saya turut menangani kegiatan operasional gudang yang membutuhkan ketelitian agar produk tertata dan siap dikirim.</p>
+        <ul>
+          <li><strong>Grouping dan packing:</strong> Mengelompokkan serta mengepak produk plastik sesuai standar keamanan perusahaan untuk distribusi maupun penyimpanan.</li>
+          <li><strong>Penanganan inventaris:</strong> Membantu mengangkut dan menyusun barang yang baru diproduksi atau diterima ke dalam rak gudang secara sistematis agar mudah ditemukan saat proses pemuatan.</li>
+        </ul>
+        <h4>3. Keterampilan dan Etos Kerja</h4>
+        <p>Ritme kerja yang dinamis membantu saya memahami pentingnya efisiensi dan koordinasi dalam operasional bisnis.</p>
+        <ul>
+          <li>Menjaga manajemen waktu untuk memenuhi jadwal pengiriman harian ke berbagai toko.</li>
+          <li>Berkolaborasi dengan tim administrasi gudang, tim produksi, dan rekan logistik dalam proses pemuatan barang.</li>
+          <li>Membangun ketahanan mental dan fisik, fokus, serta kesiapan bekerja di lapangan.</li>
+        </ul>
+        <h4>4. Nilai yang Saya Bawa</h4>
+        <p>Pengalaman di CV. Gajah Mada Plastik membuktikan bahwa saya adalah eksekutor lapangan yang disiplin, dapat diandalkan, dan bertanggung jawab. Dipadukan dengan pengalaman kepemimpinan di organisasi, pemahaman saya tentang pengelolaan logistik fisik dan distribusi membentuk pribadi yang adaptif, siap bekerja keras, dan mampu mendukung kelancaran operasional di berbagai lingkungan kerja.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+    <article data-experience="production-staff" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN KERJA</p>
+        <h3 class="tk-story-title" data-experience-title>Production Staff</h3>
+        <p class="experience-detail-organization">Incipono Dimsum</p>
+        <p>Pengalaman profesional saya di industri kuliner diperkuat melalui peran sebagai Staf Produksi di Incipono, jenama yang berfokus pada produk dimsum. Saya bekerja di dapur produksi untuk memastikan produk dibuat secara konsisten, memenuhi standar mutu, dan siap didistribusikan kepada konsumen. Peran ini mengasah ketelitian, manajemen waktu dalam memenuhi target harian, serta kepatuhan terhadap prosedur operasional standar (SOP).</p>
+        <figure class="education-story-photo">
+          <img src="../Assets/Figma/Prototype2/experience-03.png" alt="Pengalaman sebagai staf produksi di Incipono Dimsum">
+          <figcaption>Dokumentasi pengalaman di Incipono Dimsum.</figcaption>
+        </figure>
+        <h4>1. Proses Produksi Dimsum</h4>
+        <p>Saya terlibat langsung dalam siklus produksi dimsum, mulai dari penyiapan bahan hingga produk siap dimasak atau dikemas.</p>
+        <ul>
+          <li><strong>Persiapan bahan:</strong> Menimbang dan menyiapkan bahan baku serta mencampur adonan secara presisi sesuai resep dan standar perusahaan.</li>
+          <li><strong>Pembentukan produk:</strong> Membentuk dimsum dengan rapi dan efisien agar tampilan serta porsinya seragam.</li>
+          <li><strong>Pengukusan:</strong> Mengatur dan mengawasi waktu pengukusan untuk menjaga kematangan, tekstur, dan kualitas produk.</li>
+        </ul>
+        <h4>2. Kontrol Kualitas dan Higienitas</h4>
+        <p>Untuk menjaga kebersihan dan keamanan pangan, saya menerapkan sanitasi pada setiap tahap produksi.</p>
+        <ul>
+          <li>Menjaga kebersihan diri, menggunakan atribut pelindung kerja, serta membersihkan dan mensterilkan peralatan sebelum dan sesudah produksi.</li>
+          <li>Memeriksa produk akhir dari segi bentuk, kematangan, dan kesesuaian dengan standar kualitas Incipono.</li>
+          <li>Memisahkan produk yang tidak memenuhi standar agar tidak tercampur dengan produk yang siap dikemas dan dapat menjadi bahan evaluasi.</li>
+        </ul>
+        <h4>3. Efisiensi dan Kolaborasi Tim</h4>
+        <p>Lingkungan dapur produksi yang dinamis melatih saya bekerja cekatan tanpa mengabaikan mutu.</p>
+        <ul>
+          <li>Mengejar target jumlah produksi harian dengan tetap menjaga kerapian dan konsistensi produk.</li>
+          <li>Berkolaborasi dengan tim persiapan bahan dan tim pengemasan agar alur kerja dari produksi hingga packaging berjalan lancar dan menghindari penumpukan pekerjaan.</li>
+        </ul>
+        <h4>4. Nilai yang Saya Bawa</h4>
+        <p>Pengalaman di Incipono membentuk saya sebagai pekerja produksi yang cekatan, disiplin, teliti, dan berorientasi pada konsistensi kualitas. Dipadukan dengan pengalaman logistik di CV. Gajah Mada Plastik serta kreativitas dan kepemimpinan yang saya kembangkan selama pengabdian di pondok, saya siap membawa etos kerja dan standar kerja tinggi ke lingkungan profesional berikutnya.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+    <article data-experience="content-creator" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN KERJA</p>
+        <h3 class="tk-story-title" data-experience-title>Content Creator</h3>
+        <p class="experience-detail-organization">Miejol Indonesia</p>
+        <p>Di era digital yang bergerak cepat, saya mengasah kemampuan produksi konten dari awal hingga akhir saat dipercaya menjadi Content Creator di Miejol. Saya menangani beberapa peran sekaligus—videografer, talent di depan kamera, dan editor—untuk menerjemahkan identitas brand kuliner menjadi konten video yang kreatif dan menarik bagi audiens media sosial.</p>
+        <figure class="education-story-photo">
+          <img src="../Assets/Figma/Prototype2/experience-04.png" alt="Pengalaman sebagai content creator di Miejol Indonesia">
+          <figcaption>Dokumentasi pengalaman di Miejol Indonesia.</figcaption>
+        </figure>
+        <h4>1. Produksi Lapangan dan Sinematografi</h4>
+        <p>Sebagai videografer, saya menangkap daya tarik produk dan suasana Miejol melalui visual yang menggugah selera.</p>
+        <ul>
+          <li>Merancang konsep pengambilan gambar, menentukan sudut kamera, dan mengatur pencahayaan untuk menonjolkan tekstur serta warna produk.</li>
+          <li>Menggunakan pergerakan kamera seperti panning, tilting, dan macro shot untuk menghasilkan video yang dinamis dan transisi yang halus.</li>
+        </ul>
+        <h4>2. Representasi Brand dan Komunikasi</h4>
+        <p>Saya juga tampil di depan kamera sebagai talent dan wajah brand dalam berbagai konten.</p>
+        <ul>
+          <li>Membangun persona yang ramah, energik, dan ekspresif untuk menyampaikan pesan brand secara natural.</li>
+          <li>Membawakan ulasan produk dan konten hiburan atau komedi dengan gaya interaktif untuk mendorong keterlibatan serta rasa ingin tahu audiens.</li>
+        </ul>
+        <h4>3. Paskaproduksi dan Retensi Penonton</h4>
+        <p>Sebagai editor, saya mengolah materi pengambilan gambar menjadi video akhir yang ringkas, menarik, dan mudah dipahami.</p>
+        <ul>
+          <li>Mengatur ritme dan potongan video agar dinamis, dengan hook yang kuat pada bagian pembuka untuk menarik perhatian penonton.</li>
+          <li>Memilih musik latar yang sesuai, menambahkan efek suara, serta menyisipkan teks atau caption agar pesan tetap mudah dipahami tanpa suara.</li>
+        </ul>
+        <h4>4. Nilai yang Saya Bawa</h4>
+        <p>Pengalaman di Miejol membuktikan kemampuan saya mengeksekusi seluruh proses pembuatan konten: mengoperasikan kamera, tampil percaya diri di depan publik, dan menyunting video yang menarik. Dipadukan dengan kedisiplinan dan pengalaman operasional dari pekerjaan sebelumnya, keterampilan multimedia ini menjadi bekal untuk berkontribusi di industri kreatif dan mendukung performa digital brand.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+    <article data-experience="brand-ambassador" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN KERJA</p>
+        <h3 class="tk-story-title" data-experience-title>Brand Ambassador</h3>
+        <p class="experience-detail-organization">Macaronicuck</p>
+        <p>Saya memperluas pengalaman di industri kreatif digital melalui peran sebagai Content Creator di Macaronicuck. Berbeda dari pembuatan konten rutin di outlet, peran ini berfokus pada produksi konten berbasis proyek dan acara. Saya bertugas menangkap momen aktivasi brand di berbagai event sekaligus mendukung kebutuhan operasional tim di lapangan.</p>
+        <figure class="education-story-photo">
+          <img src="../Assets/Figma/Prototype2/experience-05.png" alt="Pengalaman sebagai brand ambassador di Macaronicuck">
+          <figcaption>Dokumentasi pengalaman di Macaronicuck.</figcaption>
+        </figure>
+        <h4>1. Produksi Konten Berbasis Event</h4>
+        <p>Produksi konten di tengah acara menuntut kepekaan dan kreativitas dalam ritme lapangan yang cepat. Saya membuat konten secara mobile di berbagai acara komersial, bazar, dan festival tempat Macaronicuck membuka stan.</p>
+        <ul>
+          <li>Merekam suasana acara, antusiasme pengunjung, antrean pembeli, dan interaksi di sekitar stan.</li>
+          <li>Memanfaatkan momentum dan tren audio atau media sosial yang relevan untuk menghasilkan konten segar yang mengundang audiens datang langsung ke stan.</li>
+        </ul>
+        <h4>2. Dukungan Operasional Stan</h4>
+        <p>Peran saya juga mencakup bantuan langsung kepada tim operasional, khususnya saat stan ramai pengunjung.</p>
+        <ul>
+          <li>Mendukung pelayanan, interaksi dengan pelanggan, dan persiapan produk sesuai kebutuhan tim di lapangan.</li>
+          <li>Menggunakan pengalaman berinteraksi langsung dengan konsumen untuk memahami preferensi mereka dan membuat konten yang lebih autentik serta relevan.</li>
+        </ul>
+        <h4>3. Adaptabilitas dan Komunikasi</h4>
+        <ul>
+          <li>Beradaptasi dengan lokasi acara, pencahayaan, dan tingkat keramaian yang berbeda sambil tetap berupaya menghasilkan video berkualitas.</li>
+          <li>Berinteraksi dengan pengunjung dari beragam latar belakang serta mengamati respons audiens secara langsung sebagai bagian dari pengalaman pemasaran offline.</li>
+        </ul>
+        <h4>4. Nilai yang Saya Bawa</h4>
+        <p>Pengalaman di Macaronicuck melengkapi kemampuan produksi video end-to-end yang saya kembangkan di Miejol dengan kreativitas, kemandirian, dan kelincahan bekerja di lapangan. Saya mampu menyelaraskan pembuatan konten digital dengan aktivitas brand di acara offline, serta membawa energi dan fleksibilitas untuk mendukung visibilitas brand dan pengalaman pelanggan.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+    <article data-experience="dpm-pens" class="content education-detail education-detail-centered experience-detail">
+      <div class="tk-story">
+        <p class="eyebrow">PENGALAMAN ORGANISASI</p>
+        <h3 class="tk-story-title" data-experience-title>Badan Komunikasi dan Informasi</h3>
+        <p class="experience-detail-organization">Dewan Perwakilan Mahasiswa PENS · Sedang menjabat</p>
+        <p>Di luar pengembangan produk digital dan rekayasa perangkat lunak, saya memperluas kapasitas profesional ke ranah komunikasi publik strategis sebagai anggota Badan Komunikasi dan Informasi (Kominfo) di Dewan Perwakilan Mahasiswa (DPM) Politeknik Elektronika Negeri Surabaya (PENS).</p>
+        <p>Peran ini menuntut kemampuan analisis audiens, ketepatan waktu dalam pengelolaan informasi, serta pemahaman tentang cara menyampaikan informasi pemerintahan mahasiswa secara transparan, edukatif, dan profesional kepada civitas academica.</p>
+        <h4>1. Ruang Lingkup dan Eksekusi Manajerial</h4>
+        <p>Sebagai operator dan pengelola lini masa media sosial resmi <strong>@dpmpens</strong>, saya terlibat dalam siklus publikasi digital institusi melalui beberapa tanggung jawab berikut:</p>
+        <ul>
+          <li><strong>Transparansi institusional:</strong> Merancang publikasi dokumen legal dan administratif, seperti Surat Keputusan (SK) dan regulasi mahasiswa, dalam format visual yang mudah diakses dan dipahami tanpa mengurangi keabsahan informasinya.</li>
+          <li><strong>Strategi konten edukatif:</strong> Menyusun konten Edukasi Pemerintahan melalui riset kebijakan, perumusan copywriting yang lugas, dan desain interaktif untuk meningkatkan pemahaman mahasiswa mengenai kebijakan dan birokrasi kampus.</li>
+          <li><strong>Pelaporan langsung:</strong> Meliput dan menyampaikan informasi secara real-time dari acara, sidang, dan forum DPM PENS dengan mengutamakan kecepatan, ketepatan fakta, dan kesiapan bekerja di bawah tekanan waktu.</li>
+          <li><strong>Engagement dan relasi publik:</strong> Merancang kalender konten hari besar nasional dan internasional agar DPM PENS hadir secara relevan dan konsisten di ruang digital.</li>
+        </ul>
+        <h4>2. Manajemen Platform dan Pengendalian Mutu Visual</h4>
+        <p>Dalam mengelola akun Instagram resmi organisasi tingkat politeknik, saya menerapkan pengendalian mutu visual melalui konsistensi tata letak, hierarki tipografi, dan pemilihan palet warna yang selaras dengan identitas DPM PENS. Setiap takarir dan aset visual juga diverifikasi untuk menjaga ketepatan informasi serta menghindari misinformasi dan bias komunikasi.</p>
+        <h4>3. Nilai yang Saya Kembangkan</h4>
+        <p>Pengalaman ini melengkapi portofolio teknis saya dengan keterampilan manajemen media sosial, hubungan masyarakat, dan komunikasi strategis. Saya belajar mengomunikasikan nilai, kebijakan, dan informasi publik secara efektif kepada audiens luas, sekaligus mengelola alur kerja informasi yang cepat, dinamis, dan berdampak.</p>
+      </div>
+      <a class="text-link" href="#experience" data-page="experience">← Kembali ke semua pengalaman</a>
+    </article>
+  </template>
+  <template id="projects-content">
+    <div class="content project-list">
+      <a class="project-card" href="#project/smart-tumbler" data-page="project-smart-tumbler"><img class="project-thumb" src="../Assets/Figma/Porto/Manpro.png" alt="Proyek Smart Tumbler"><span class="project-number">01</span><span class="project-category">Manajemen Proyek</span><h2>Smart Tumbler</h2><p>Proyek manajemen dan pengembangan Smart Tumbler.</p></a>
+      <a class="project-card" href="#project/visual-novel-telaga-sarangan" data-page="project-visual-novel-telaga-sarangan"><img class="project-thumb" src="../Assets/Figma/Porto/Visnov.png" alt="Visual Novel Asal Usul Telaga Sarangan"><span class="project-number">02</span><span class="project-category">Storytelling Interaktif</span><h2>Visual Novel Asal Usul Telaga Sarangan</h2><p>Proyek cerita interaktif.</p></a>
+      <a class="project-card" href="#project/nutrition-for-the-future" data-page="project-nutrition-for-the-future"><img class="project-thumb" src="../Assets/Figma/Porto/Animasi 2D.png" alt="Animasi Nutrition For The Future"><span class="project-number">03</span><span class="project-category">Animasi 2D</span><h2>Nutrition For The Future</h2><p>Proyek animasi dua dimensi.</p></a>
+      <a class="project-card" href="#project/detector-telapak-tangan" data-page="project-detector-telapak-tangan"><img class="project-thumb" src="../Assets/Figma/Porto/PBO.png" alt="Aplikasi Detector Telapak Tangan"><span class="project-number">04</span><span class="project-category">Teknologi Video</span><h2>Aplikasi Detector Telapak Tangan</h2><p>Aplikasi deteksi telapak tangan.</p></a>
+      <a class="project-card" href="#project/waktu-jaga" data-page="project-waktu-jaga"><img class="project-thumb" src="../Assets/Figma/Porto/Animasi 3D.png" alt="Animasi 3D Waktu Jaga"><span class="project-number">05</span><span class="project-category">Animasi 3D</span><h2>Waktu Jaga</h2><p>Proyek animasi tiga dimensi.</p></a>
+      <a class="project-card" href="#project/sajuti-melik" data-page="project-sajuti-melik"><img class="project-thumb" src="../Assets/Figma/Porto/PENS.png" alt="Proyek Sajuti Melik"><span class="project-number">06</span><span class="project-category">Workshop Audio Visual Media</span><h2>Sajuti Melik, Hasanuddin, Sejarah PENS</h2><p>Proyek audio visual.</p></a>
+      <a class="project-card" href="#project/ar-virtucare" data-page="project-ar-virtucare"><img class="project-thumb" src="../Assets/Figma/Porto/VR.png" alt="Proyek AR VirtuCare"><span class="project-number">07</span><span class="project-category">Teknologi AR / VR</span><h2>AR VirtuCare</h2><p>Proyek teknologi augmented dan virtual reality.</p></a>
+      <a class="project-card" href="#project/escape-sby" data-page="project-escape-sby"><img class="project-thumb" src="../Assets/Figma/Porto/UI UX EscapeSBY.png" alt="Prototype Web EscapeSBY"><span class="project-number">08</span><span class="project-category">Design UI / UX</span><h2>Prototype Web EscapeSBY</h2><p>Desain pengalaman dan antarmuka web.</p></a>
+      <a class="project-card" href="#project/web-portfolio" data-page="project-web-portfolio"><img class="project-thumb" src="../Assets/Figma/Porto/UI UX Portofolio.png" alt="Prototype Web Portofolio"><span class="project-number">09</span><span class="project-category">Design UI / UX</span><h2>Prototype Web Portofolio</h2><p>Desain web portofolio.</p></a>
+      <a class="project-card" href="#project/mr-galaxy-mall" data-page="project-mr-galaxy-mall"><img class="project-thumb" src="../Assets/Figma/Porto/MR.png" alt="Proyek MR Galaxy Mall"><span class="project-number">10</span><span class="project-category">Mixed Reality</span><h2>MR Galaxy Mall</h2><p>Eksplorasi mixed reality.</p></a>
+      <a class="project-card" href="#project/hahahihi-ecommerce" data-page="project-hahahihi-ecommerce"><img class="project-thumb" src="../Assets/Figma/Porto/TekWeb.png" alt="Proyek Hahahihi E-Commerce"><span class="project-number">11</span><span class="project-category">Teknologi Web</span><h2>Hahahihi E-Commerce</h2><p>Proyek aplikasi e-commerce berbasis web.</p></a>
+      <a class="project-card" href="#project/bite-hub" data-page="project-bite-hub"><img class="project-thumb" src="../Assets/Figma/Porto/Pemrograman Mobile.png" alt="Proyek Bite Hub"><span class="project-number">12</span><span class="project-category">Pemrograman Mobile</span><h2>Bite Hub</h2><p>Proyek aplikasi mobile.</p></a>
+      <a class="project-card" href="#project/jaringan-multimedia" data-page="project-jaringan-multimedia"><img class="project-thumb" src="../Assets/Figma/Porto/Jaringan Multimedia.png" alt="Proyek Jaringan Multimedia"><span class="project-number">13</span><span class="project-category">Multimedia</span><h2>Jaringan Multimedia</h2><p>Eksplorasi jaringan multimedia.</p></a>
+    </div>
+  </template>
+  <template id="archive-content">
+    <div class="content archive-grid">
+      <article class="archive-card" data-slug="berkasir"><span class="project-number">01</span><span class="project-category">Pengembangan aplikasi · Flutter &amp; Firebase</span><h2>Pembuatan Aplikasi Berkasir</h2><p>POS Android untuk mendigitalisasi operasional ritel Tabreez Mart.</p></article>
+      <article class="archive-card" data-slug="pg-697"><span class="project-number">02</span><span class="project-category">PM Darussalam Gontor 1</span><h2>Drama Arena 596</h2><p>Dokumentasi Drama Arena 596 di Gontor 1.</p></article>
+      <article class="archive-card" data-slug="pg-698"><span class="project-number">03</span><span class="project-category">PM Darul Ma'rifat Gontor 3</span><h2>Panggung Gembira 697</h2><p>Dokumentasi Panggung Gembira 697 di Gontor 3.</p></article>
+      <article class="archive-card" data-slug="pionering"><span class="project-number">04</span><span class="project-category">PM Tgk. Chiek Oemar Diyan</span><h2>Panggung Gembira Gretasha Generation</h2><p>Dokumentasi Panggung Gembira Gretasha Generation di PM Tgk. Chiek Oemar Diyan.</p></article>
+      <article class="archive-card" data-slug="jaringan-multimedia"><span class="project-number">05</span><span class="project-category">Kegiatan kepramukaan</span><h2>Boys And Rover Scout Championship 2023</h2><p>Dokumentasi Boys And Rover Scout Championship 2023.</p></article>
+      <article class="archive-card" data-slug="mr"><span class="project-number">06</span><span class="project-category">Kegiatan kepramukaan</span><h2>Weekly Scout Pioneering</h2><p>Dokumentasi kegiatan Weekly Scout Pioneering.</p></article>
+    </div>
+  </template>
+  <template id="project-articles">
+    <article data-article="smart-tumbler">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek ini dikerjakan untuk memenuhi penilaian mata kuliah Manajemen Proyek. Gagasannya adalah merancang Smart Tumbler: wadah minum portabel yang mengadaptasi fungsi dispenser ke bentuk ringkas. Dalam konsep ini, baterai terintegrasi dirancang untuk mendukung penggunaan mobile.</p>
+  <h4>2. Latar Belakang dan Solusi</h4>
+  <p>Dispenser konvensional sulit dibawa dan bergantung pada sumber listrik, sementara tumbler biasa hanya menjaga suhu dan tidak dapat mengubah suhu air secara aktif atau mengaduk minuman bubuk. Proyek ini mengeksplorasi konsep wadah minum pintar yang dirancang untuk memberi pengguna pilihan pemanasan, pendinginan, dan pengadukan minuman dalam satu perangkat portabel.</p>
+  <h4>3. Fitur Utama dalam Konsep</h4>
+  <ul>
+    <li><strong>Pemanasan dan pendinginan aktif:</strong> Konsep pengaturan suhu untuk mode hangat maupun dingin dalam ukuran ringkas dengan sumber daya baterai.</li>
+    <li><strong>Pengaduk otomatis:</strong> Mekanisme pengaduk terintegrasi yang dirancang untuk membantu melarutkan kopi, susu, atau suplemen tanpa alat pengaduk eksternal.</li>
+    <li><strong>Antarmuka pintar:</strong> Panel digital pada tutup untuk menampilkan informasi suhu, mode, dan waktu penggunaan.</li>
+  </ul>
+  <h4>4. Pendekatan Manajemen Proyek</h4>
+  <ul>
+    <li><strong>Manajemen ruang lingkup:</strong> Menentukan batasan fitur yang sesuai dengan ukuran portabel, termasuk mempertimbangkan kebutuhan daya untuk sistem termal dan motor pengaduk.</li>
+    <li><strong>Desain dan prototyping visual:</strong> Membuat rancangan dan visualisasi 3D untuk mengomunikasikan konsep kepada dosen dan pemangku kepentingan sebelum kemungkinan pengembangan fisik.</li>
+    <li><strong>Manajemen risiko:</strong> Mengidentifikasi tantangan konseptual seperti isolasi panas dan dingin agar tidak berdampak pada komponen baterai, serta pemilihan material bagian dalam yang aman untuk kontak dengan minuman.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Akademis</h4>
+  <p>Proyek Smart Tumbler menggabungkan eksplorasi teknik konversi energi, desain produk, dan manajemen linimasa. Melalui proyek ini, saya berlatih merencanakan inovasi teknologi dari perumusan masalah dan penentuan ruang lingkup hingga visualisasi konsep yang siap ditinjau lebih lanjut.</p>
+    </article>
+    <article data-article="visual-novel-telaga-sarangan">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek kelompok ini dikembangkan untuk memenuhi penilaian mata kuliah Storytelling Interaktif. Cerita rakyat Jawa Timur, “Asal-Usul Telaga Sarangan”, diadaptasi ke dalam media modern berupa visual novel interaktif. Saya bertanggung jawab sebagai Asset Creator—desainer grafis dan ilustrator—untuk memproduksi elemen visual game menggunakan Adobe Illustrator.</p>
+  <h4>2. Tantangan Desain dan Pendekatan Kreatif</h4>
+  <p>Tantangan utamanya adalah menerjemahkan cerita tradisional menjadi aset digital yang menarik bagi generasi muda, dengan tetap menjaga nilai budaya, lokalitas, serta atmosfer mistis dan historis cerita Telaga Sarangan. Saya menggunakan desain vektor di Adobe Illustrator agar karakter dan latar memiliki bentuk yang tegas, warna yang konsisten, dan dapat diskalakan untuk integrasi ke dalam game.</p>
+  <h4>3. Ruang Lingkup Aset Visual</h4>
+  <ul>
+    <li><strong>Desain karakter dan ekspresi:</strong> Merancang tokoh seperti Kyai Pasir dan Nyai Pasir, termasuk variasi ekspresi dan pose untuk mendukung penyampaian dialog.</li>
+    <li><strong>Ilustrasi latar:</strong> Membuat lingkungan cerita, mulai dari area ladang atau hutan kuno dan penemuan telur misterius hingga adegan terbentuknya cekungan Telaga Sarangan.</li>
+    <li><strong>Antarmuka dan properti:</strong> Mendesain kotak dialog, tombol pilihan interaktif, dan properti cerita seperti telur gaib.</li>
+  </ul>
+  <h4>4. Alur Kerja Desain</h4>
+  <ol>
+    <li><strong>Studi referensi dan moodboard:</strong> Mengumpulkan referensi pakaian Jawa kuno, anatomi, serta lanskap sekitar Gunung Lawu untuk mendukung konteks visual cerita.</li>
+    <li><strong>Sketsa dan tracing:</strong> Membuat sketsa anatomi karakter serta komposisi latar, lalu merapikannya menjadi bentuk vektor menggunakan Pen Tool di Adobe Illustrator.</li>
+    <li><strong>Pewarnaan dan pencahayaan:</strong> Memilih warna untuk membangun suasana adegan—warna hangat untuk momen damai dan warna lebih gelap atau kontras untuk bagian klimaks.</li>
+    <li><strong>Ekspor dan optimalisasi:</strong> Mengekspor aset sebagai PNG berlatar transparan dengan resolusi yang sesuai kebutuhan tim pengembang game.</li>
+  </ol>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek ini menyatukan storytelling tradisional dengan desain digital modern. Sebagai Asset Creator, saya mengembangkan kemampuan menerjemahkan naskah menjadi visual, menjaga konsistensi art style, dan berkolaborasi dalam tim produksi media interaktif.</p>
+    </article>
+    <article data-article="nutrition-for-the-future">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek kelompok ini dikembangkan sebagai luaran klinis mata kuliah Animasi 2D. Fokusnya adalah merancang dan memproduksi video animasi edukasi infografis tentang gizi makanan agar informasi pola makan seimbang serta nutrisi makro dan mikro dapat dipahami dengan cara yang menyenangkan. Saya berperan sebagai Storyboard Artist pada pra-produksi dan Lead Animator pada produksi menggunakan Adobe After Effects.</p>
+  <h4>2. Pra-Produksi: Storyboard dan Alur Komunikasi</h4>
+  <p>Untuk menyajikan informasi seperti kalori, vitamin, dan zat besi dengan menarik, saya menerjemahkan naskah dan materi gizi dari tim riset ke dalam panel storyboard yang terstruktur.</p>
+  <ul>
+    <li>Memetakan materi menjadi urutan visual agar pesan edukasi mudah diikuti.</li>
+    <li>Merencanakan komposisi, tata letak elemen, pergerakan kamera, dan transisi antarkomponen gizi untuk menjaga alur informasi tetap logis dan dinamis.</li>
+    <li>Menyiapkan storyboard sebagai panduan produksi dan acuan koordinasi tim.</li>
+  </ul>
+  <h4>3. Produksi: Animasi dengan Adobe After Effects</h4>
+  <p>Setelah storyboard disetujui, saya menghidupkan aset ilustrasi 2D menjadi motion graphics untuk mendukung penyampaian materi.</p>
+  <ul>
+    <li><strong>Prinsip animasi:</strong> Menerapkan timing, spacing, easing, dan anticipation dengan Easy Ease serta Graph Editor agar gerakan grafik terasa lebih halus dan organik.</li>
+    <li><strong>Karakter dan tipografi kinetik:</strong> Menganimasikan maskot pemandu dan teks bergerak untuk mempertegas poin gizi yang disampaikan melalui voice-over.</li>
+    <li><strong>Sinkronisasi audio-visual:</strong> Menyelaraskan gerak visual dengan musik latar dan efek suara, seperti saat ikon makanan muncul, untuk memperkuat pesan edukasi.</li>
+  </ul>
+  <h4>4. Komunikasi dan Manajemen Workflow</h4>
+  <ul>
+    <li>Menjembatani gagasan penulis naskah ke dalam rancangan visual dan gerakan animasi yang dapat diproduksi.</li>
+    <li>Menyusun layer dan pre-compose secara teratur di After Effects agar revisi dan penyesuaian aset dapat dilakukan tanpa mengganggu keseluruhan timeline.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek ini mengembangkan kemampuan saya di sepanjang proses produksi multimedia—dari merancang komunikasi visual melalui storyboard hingga menganimasikan aset dan menyusun video edukasi di Adobe After Effects. Saya belajar menjaga kejelasan pesan, estetika, dan koordinasi tim dalam satu karya animasi.</p>
+    </article>
+    <article data-article="sajuti-melik">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek eksperimental ini dikembangkan untuk mata kuliah Workshop Audio dan Visual Media. Fokusnya adalah merancang pertunjukan projection mapping interaktif yang dipadukan dengan sound design imersif, dengan narasi tentang Sajuti Melik, perjuangan Sultan Hasanuddin, dan sejarah Politeknik Elektronika Negeri Surabaya (PENS). Saya bertanggung jawab di divisi Visual Editing sekaligus menjadi Asset Creator yang menyiapkan dan menyelaraskan materi visual untuk diproyeksikan pada media fisik.</p>
+  <h4>2. Perancangan Aset Visual Berbasis Sejarah</h4>
+  <p>Tantangan proyek ini adalah membangun nuansa sejarah yang autentik melalui estetika visual modern. Saya merancang dan mengolah aset grafis yang mendukung ketiga narasi, termasuk tokoh Sajuti Melik dan mesin ketik proklamasi, suasana perjuangan Sultan Hasanuddin, serta materi dokumenter sejarah PENS. Aset disiapkan dengan resolusi tinggi dan memperhatikan masking agar dapat disesuaikan dengan bentuk permukaan proyeksi.</p>
+  <h4>3. Editing Visual dan Sinkronisasi Audio</h4>
+  <ul>
+    <li><strong>Pacing audio-visual:</strong> Menyunting gerakan visual agar selaras dengan sound design, musik, dan efek suara, sehingga transisi dramatis serta kemunculan elemen visual mendukung pengalaman pertunjukan.</li>
+    <li><strong>Compositing dan transisi:</strong> Mengolah efek dan ilusi gerak pada permukaan proyeksi, serta merancang perpindahan antarnarasi sejarah secara halus dan tematis.</li>
+  </ul>
+  <h4>4. Kolaborasi Teknis dan Pengujian Lapangan</h4>
+  <ul>
+    <li>Berkolaborasi dengan operator proyektor untuk melakukan penyesuaian warping dan blending agar hasil visual sesuai dengan bentuk objek atau permukaan proyeksi.</li>
+    <li>Melakukan penyesuaian dan render ulang saat pengujian untuk merespons perubahan audio maupun kondisi pencahayaan di lokasi.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek projection mapping ini mengasah kemampuan saya mengelola visual untuk pertunjukan imersif, menyelaraskan audio dan gambar secara teliti, serta menyiapkan aset yang adaptif terhadap kebutuhan teknologi proyeksi. Saya juga memperoleh pengalaman berkolaborasi dan melakukan iterasi teknis dalam kondisi lapangan.</p>
+    </article>
+    <article data-article="waktu-jaga">
+<h4>1. Ringkasan Proyek</h4>
+  <p>“Waktu Jaga” adalah film pendek animasi 3D bergenre horor-psikologis yang dikembangkan sebagai proyek kelompok untuk mata kuliah Animasi 3D. Ceritanya membangun ketegangan dan misteri pada jam-jam krusial di malam hari. Dalam pipeline produksi, saya bertanggung jawab sebagai 3D Asset Creator sekaligus Scene Builder dan Set Dresser menggunakan Blender.</p>
+  <h4>2. Pembuatan Aset 3D dan Material</h4>
+  <p>Saya membuat berbagai properti interior dengan polygonal modeling di Blender, mulai dari furnitur, lampu lantai, dan jam dinding hingga elemen dekorasi pendukung cerita. Aset dirancang untuk memperkuat suasana dan kebutuhan adegan.</p>
+  <ul>
+    <li><strong>Modeling properti:</strong> Membentuk objek hard-surface dan detail ruangan yang mendukung narasi “Waktu Jaga”.</li>
+    <li><strong>Texturing dan material:</strong> Mengolah material untuk memberikan kesan usang, berdebu, atau dingin sehingga objek terasa menyatu dengan suasana horor.</li>
+  </ul>
+  <h4>3. Penyusunan Adegan dan Sinematografi Ruang</h4>
+  <ul>
+    <li><strong>Set dressing dan layout:</strong> Menata aset di dalam ruang 3D untuk membangun kesan klaustrofobik, termasuk sudut-sudut gelap dan ruang yang terasa menjebak.</li>
+    <li><strong>Pengaturan pencahayaan:</strong> Menggunakan pendekatan low-key lighting dengan Spot Light dan Point Light pada scene yang ditangani, untuk membentuk kontras dan bayangan serta mengarahkan perhatian pada bagian penting cerita.</li>
+  </ul>
+  <h4>4. Efisiensi Pipeline dan Kolaborasi</h4>
+  <ul>
+    <li>Menjaga topology aset tetap efisien pada tingkat low hingga mid-poly agar pengerjaan scene dan proses render lebih terkelola tanpa mengabaikan kebutuhan visual.</li>
+    <li>Berkoordinasi dengan tim animator karakter dan sinematografer agar tata ruang dan aset mendukung pergerakan karakter serta kebutuhan sudut kamera.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek “Waktu Jaga” memperkuat keterampilan saya menggunakan Blender dalam pipeline produksi 3D—dari modeling dan material hingga penyusunan ruang dan pencahayaan. Saya belajar memadukan kebutuhan teknis aset dengan visi artistik untuk membangun emosi dan ketegangan dalam karya sinematik, sekaligus menjaga koordinasi antardivisi.</p>
+    </article>
+    <article data-article="detector-telapak-tangan">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek kelompok ini dikembangkan untuk memenuhi tugas mata kuliah Teknologi Video. “Detector Telapak Tangan” adalah konsep aplikasi interaktif yang menggunakan webcam untuk melacak posisi tangan secara real-time, menghitung jumlah jari yang terbuka, dan mendeteksi orientasi tangan kanan atau kiri. Dalam proyek ini, saya berperan sebagai Product Ideator sekaligus Project Facilitator yang membantu menjaga alur kerja tim tetap terarah dan selesai sesuai target.</p>
+  <h4>2. Inisiasi Ide dan Konseptualisasi Produk</h4>
+  <p>Saya mengusulkan konsep aplikasi computer vision yang dapat menunjukkan hasil deteksi gestur secara langsung dan sesuai dengan fokus pembelajaran Teknologi Video. Rancangan teknis kelompok mempertimbangkan pustaka pendukung seperti OpenCV dan MediaPipe serta pemisahan fungsi ke dalam objek, misalnya kamera, detektor jari, dan antarmuka visual.</p>
+  <ul>
+    <li>Mengonsep keluaran interaktif berupa informasi orientasi tangan dan jumlah jari yang terdeteksi, dilengkapi penanda koordinat pada titik-titik tangan.</li>
+    <li>Mengarahkan perhatian pada rancangan keluaran yang ringkas dan mudah dibaca pengguna, termasuk teks konfirmasi jumlah jari.</li>
+  </ul>
+  <h4>3. Fasilitasi Alur Kerja dan Kolaborasi Tim</h4>
+  <p>Integrasi computer vision dapat menghadirkan kendala teknis. Sebagai fasilitator proyek, saya membantu menjaga komunikasi tim dan mendorong penyelesaian masalah secara kolaboratif.</p>
+  <ul>
+    <li>Memfasilitasi diskusi ketika tim menemui hambatan dalam sinkronisasi logika dan koordinat deteksi ujung jari.</li>
+    <li>Membantu mengurai masalah menjadi langkah yang dapat ditangani agar pekerjaan tetap bergerak menuju target mingguan.</li>
+    <li>Mengoordinasikan pengujian bersama untuk mengamati pembacaan gestur dari sudut dan kondisi pencahayaan yang berbeda.</li>
+  </ul>
+  <h4>4. Pengalaman Pengguna dan Pengujian</h4>
+  <ul>
+    <li>Mendorong rancangan instruksi yang jelas bagi pengguna, termasuk cara menutup aplikasi melalui tombol keyboard yang ditetapkan pada program.</li>
+    <li>Mengumpulkan masukan dari pengujian kelompok sebagai bahan evaluasi keterbacaan keluaran dan respons deteksi kamera.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek ini memperkuat pengalaman saya dalam pengembangan ide produk dan fasilitasi kerja tim. Saya belajar bahwa proyek perangkat lunak yang baik membutuhkan perpaduan antara gagasan yang relevan, komunikasi yang terbuka, koordinasi yang teratur, dan pengujian bersama—di samping implementasi teknis.</p>
+    </article>
+    <article data-article="ar-virtucare">
+<h4>1. Ringkasan Proyek</h4>
+  <p>AR VirtuCare dikembangkan sebagai proyek kelompok untuk mata kuliah AR/VR. Konsepnya adalah aplikasi edukasi berbasis Augmented Reality untuk menampilkan model alat kesehatan dasar secara detail dan interaktif, sebagai alternatif media belajar yang melengkapi alat peraga fisik. Dalam proyek ini, saya berperan sebagai Asset Creator untuk aset 3D dan UI, serta Quality Assurance (QA) Engineer.</p>
+  <h4>2. Landasan Perancangan</h4>
+  <p>Perancangan mengacu pada karakteristik Augmented Reality yang dibahas Azuma (1997): menggabungkan elemen nyata dan virtual, interaktif secara real-time, serta terintegrasi dalam ruang 3D. Pemilihan AR juga mengikuti gagasan Reality–Virtuality Continuum dari Milgram dan Kishino (1994), dengan menambahkan informasi digital pada lingkungan nyata alih-alih mengisolasi pengguna dari lingkungan sekitarnya.</p>
+  <h4>3. Perancangan Aset Digital</h4>
+  <p>Sebagai Asset Creator, saya mengerjakan aset untuk membantu pengguna mempelajari bentuk dan struktur alat kesehatan melalui visualisasi tiga dimensi.</p>
+  <ul>
+    <li><strong>Modeling alat kesehatan:</strong> Membuat dan mengoptimalkan model 3D dengan detail yang mendukung pengenalan komponen serta jumlah poligon yang sesuai untuk kebutuhan rendering real-time pada perangkat mobile.</li>
+    <li><strong>Aset UI dan antarmuka spasial:</strong> Merancang elemen antarmuka yang mudah digunakan untuk membantu navigasi saat menampilkan dan berinteraksi dengan objek virtual dalam lingkungan nyata.</li>
+  </ul>
+  <h4>4. Penjaminan Mutu dan Pengujian Sistem</h4>
+  <p>Saya mendukung validasi fungsional dan kenyamanan penggunaan melalui skenario pengujian bersama tim.</p>
+  <ul>
+    <li><strong>Akurasi tracking:</strong> Menguji deteksi bidang dan kestabilan penempatan model 3D saat kamera bergerak, termasuk mengamati kemungkinan pergeseran atau gangguan visual.</li>
+    <li><strong>Interaksi dan usability:</strong> Memeriksa respons aplikasi terhadap interaksi seperti memutar, mengubah skala, atau membuka informasi komponen alat kesehatan.</li>
+    <li><strong>Pelacakan bug dan performa:</strong> Mengidentifikasi serta mendokumentasikan masalah visual atau fungsional, lalu berkoordinasi dengan programmer untuk membantu meningkatkan stabilitas dan respons aplikasi.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>AR VirtuCare memberi saya pengalaman menggabungkan perancangan aset visual dengan proses QA pada aplikasi AR. Saya belajar mempertimbangkan kualitas visual, performa perangkat, kestabilan tracking, dan kemudahan penggunaan secara bersamaan agar media edukasi interaktif dapat mendukung proses belajar dengan lebih baik.</p>
+    </article>
+    <article data-article="escape-sby">
+<h4>1. Ringkasan Proyek</h4>
+  <p>EscapeSBY adalah high-fidelity prototype website olahraga yang dikembangkan untuk mata kuliah Desain UI/UX. Konsepnya adalah sebuah all-in-one digital hub bagi pelari di Surabaya untuk menemukan informasi olahraga, terhubung dengan komunitas, dan mengakses edukasi gaya hidup sehat. Saya bertanggung jawab sebagai UI/UX Designer, dari memahami kebutuhan pengguna dan menyusun arsitektur informasi hingga merancang UI serta prototipe interaktif.</p>
+  <h4>2. Arsitektur Informasi dan Pemetaan Halaman</h4>
+  <p>Saya menyusun delapan halaman utama berdasarkan kebutuhan pelari dan alur navigasi website:</p>
+  <ul>
+    <li><strong>Homepage:</strong> Ringkasan aktivitas terkini, acara terdekat, dan navigasi ke fitur utama.</li>
+    <li><strong>About:</strong> Visi, misi, dan latar belakang EscapeSBY.</li>
+    <li><strong>Event:</strong> Informasi race, fun run, serta agenda lari mingguan.</li>
+    <li><strong>Community:</strong> Ruang untuk terhubung, membentuk kelompok lari lokal, dan berdiskusi.</li>
+    <li><strong>Cloth:</strong> Katalog pakaian dan perlengkapan lari.</li>
+    <li><strong>Route:</strong> Pilihan jalur lari di Surabaya beserta jarak, tingkat kesulitan, dan kondisi rute.</li>
+    <li><strong>Style:</strong> Inspirasi sportswear untuk pelari urban.</li>
+    <li><strong>Breathing:</strong> Edukasi teknik pernapasan untuk mendukung daya tahan pelari.</li>
+  </ul>
+  <h4>3. Eksekusi UI/UX</h4>
+  <ul>
+    <li><strong>Desain visual:</strong> Memilih palet warna yang dinamis dan tipografi yang tegas agar tampilan terasa enerjik serta informasi mudah dibaca.</li>
+    <li><strong>Design system:</strong> Menyusun komponen dan varian seperti tombol, navbar, kartu informasi, dan ikon untuk menjaga konsistensi di seluruh halaman.</li>
+    <li><strong>Prototipe interaktif:</strong> Menghubungkan alur antarhalaman di Figma, merancang transisi, scrolling pada halaman rute, dan interaksi menu pilihan untuk menggambarkan pengalaman website.</li>
+  </ul>
+  <h4>4. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>EscapeSBY mengembangkan kemampuan saya menerapkan pendekatan user-centered design dalam perancangan produk digital. Saya berlatih menyusun arsitektur informasi, menjaga konsistensi sistem visual, dan menerjemahkan kebutuhan pengguna menjadi prototipe Figma yang interaktif dan informatif bagi komunitas pelari urban.</p>
+    </article>
+    <article data-article="web-portfolio">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek ini dikembangkan untuk mata kuliah Desain UI/UX: sebuah prototipe interaktif website portofolio pribadi (Personal Portfolio Hub) bagi kreator multimedia. Tujuannya adalah menghadirkan antarmuka yang sederhana dan bersih, sehingga calon klien atau perekrut dapat memahami navigasi dan menjelajahi rekam jejak kreator dengan mudah.</p>
+  <h4>2. Filosofi UI: Simplicity dan High Contrast</h4>
+  <ul>
+    <li><strong>Dark theme:</strong> Menggunakan latar gelap dengan cahaya gradasi merah marun yang lembut untuk membangun kesan personal dan profesional.</li>
+    <li><strong>Hierarki informasi:</strong> Menggabungkan tipografi monospaced yang kontras dengan penomoran menu seperti “01.1 about me” untuk membentuk jalur baca yang teratur.</li>
+    <li><strong>Navigasi langsung:</strong> Menempatkan menu utama pada landing page dan menghindari dekorasi yang mengalihkan perhatian dari konten.</li>
+  </ul>
+  <h4>3. Arsitektur Informasi dan User Journey</h4>
+  <ul>
+    <li><strong>Landing page:</strong> Pusat navigasi dengan kategori Profile, Project, dan Extras serta indeks halaman.</li>
+    <li><strong>About Me:</strong> Menyampaikan identitas personal, perkembangan karakter, dan pilar keahlian kreator.</li>
+    <li><strong>Educational History:</strong> Menampilkan perjalanan pendidikan dari TK Al Amin Jember, SD Al Baitul Amin, PM Darussalam Gontor 1, PM Darul Ma’rifat Gontor Kampus 3, hingga PENS.</li>
+    <li><strong>Detail pendidikan:</strong> Menghadirkan penceritaan mendalam untuk tiap fase, disertai dokumentasi foto dan narasi.</li>
+  </ul>
+  <h4>4. Pengalaman dan Interaktivitas</h4>
+  <ul>
+    <li>Menjaga beban kognitif tetap rendah melalui susunan menu yang jelas dan teks navigasi yang langsung berfungsi sebagai kontrol.</li>
+    <li>Menggunakan transisi antarhalaman seperti Smart Animate atau Dissolve pada prototipe Figma untuk memberikan umpan balik visual ketika pengguna bernavigasi.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek ini mengembangkan pemahaman saya tentang desain minimalis dan user-centered design. Saya belajar bahwa antarmuka yang sederhana, kontras, dan interaktif dapat membantu pengguna menemukan informasi serta mengenali struktur portofolio tanpa distraksi, sekaligus memberi pengalaman eksplorasi yang terarah dan profesional.</p>
+    </article>
+    <article data-article="hahahihi-ecommerce">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Hahahihi adalah proyek kelompok mata kuliah Teknologi Web berupa website e-commerce pakaian anak yang dirancang dengan HTML dan CSS. Saya berperan sebagai Product Ideator dan UI/UX Designer, merumuskan konsep serta menyusun layout dari draf awal menjadi panduan visual bagi tim pengembang.</p>
+  <h4>2. Inisiasi Ide dan Konsep Brand</h4>
+  <p>Saya mengusulkan identitas belanja daring yang terasa ceria dan ekspresif, sesuai dengan dunia fashion anak, namun tetap memudahkan orang tua menemukan produk dan bertransaksi.</p>
+  <ul>
+    <li><strong>Filosofi visual:</strong> Mengembangkan nama dan konsep visual yang merefleksikan keceriaan masa kanak-kanak, didukung foto produk dengan aktivitas anak di luar ruangan.</li>
+    <li><strong>Konten editorial:</strong> Menggabungkan pengalaman belanja dengan artikel pengenalan koleksi bergaya majalah untuk membangun keterikatan konsumen dengan brand.</li>
+  </ul>
+  <h4>3. Arsitektur Informasi dan Prototipe Antarmuka</h4>
+  <p>Saya merancang alur pengguna melalui empat halaman utama yang terhubung:</p>
+  <ul>
+    <li><strong>Homepage:</strong> Menampilkan banner utama, kategori Tops, Bottoms, dan Accessories, serta New Arrivals dalam struktur grid yang rapi.</li>
+    <li><strong>Article Intro:</strong> Halaman pengantar koleksi dengan tata letak editorial yang mengombinasikan narasi deskriptif dan kolase foto.</li>
+    <li><strong>Shop Page:</strong> Katalog produk berbentuk grid multi-kolom, dilengkapi Filter dan Sort untuk membantu pencarian berdasarkan ukuran atau harga.</li>
+    <li><strong>Cloth Article / Product Detail:</strong> Menyandingkan galeri foto produk dengan informasi kain, pilihan ukuran S–XL, harga, dan tombol Checkout.</li>
+  </ul>
+  <h4>4. Blueprint Implementasi HTML dan CSS</h4>
+  <p>Prototipe Figma digunakan sebagai acuan visual untuk tim pemrograman web.</p>
+  <ul>
+    <li>Memberi panduan pemetaan struktur elemen halaman, seperti header, navigasi, konten utama, dan footer.</li>
+    <li>Menjadi referensi palet warna, tipografi, spasi, dan penggunaan Flexbox atau CSS Grid agar implementasi mengikuti layout yang dirancang.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek Hahahihi mengembangkan pengalaman saya dalam perancangan produk digital dan design thinking. Saya berlatih menerjemahkan ide bisnis menjadi rancangan antarmuka yang terstruktur dan fungsional, serta menyiapkan blueprint yang memudahkan kolaborasi dengan tim developer.</p>
+    </article>
+    <article data-article="bite-hub">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Bitehub dikembangkan sebagai proyek kelompok untuk mata kuliah Pemrograman Mobile. Aplikasi layanan pesan-antar makanan ini dirancang untuk membantu UMKM kuliner lokal menjangkau pelanggan secara lebih luas. Saya terlibat dalam perumusan fungsionalitas, perancangan user flow, dan penyusunan konsep pengelolaan data operasional.</p>
+  <h4>2. Arsitektur Pengguna dan Hak Akses</h4>
+  <ul>
+    <li><strong>Customer:</strong> Menjelajahi mitra UMKM, melihat detail menu, melakukan pemesanan, dan memantau status pesanan melalui perangkat mobile.</li>
+    <li><strong>Admin atau merchant:</strong> Mengelola toko, menerima pesanan, memperbarui katalog, dan memantau aktivitas operasional melalui dashboard.</li>
+  </ul>
+  <h4>3. Operasi CRUD dan Pengelolaan Data</h4>
+  <p>Konsep data aplikasi mencakup operasi Create, Read, Update, dan Delete (CRUD) pada informasi toko dan katalog makanan.</p>
+  <ul>
+    <li><strong>Pendaftaran toko:</strong> Merancang alur untuk mendaftarkan profil mitra, menampilkan informasi toko, memperbarui detail operasional, serta menonaktifkan atau menghapus toko sesuai kebutuhan.</li>
+    <li><strong>Manajemen stok dan menu:</strong> Merancang alur penambahan menu dan foto, penayangan katalog dan harga, pembaruan harga atau status ketersediaan, serta penghapusan menu yang tidak lagi ditawarkan.</li>
+  </ul>
+  <h4>4. Pengalaman Antarmuka Mobile</h4>
+  <ul>
+    <li><strong>Layout responsif:</strong> Mempertimbangkan tampilan kartu makanan, tombol pemesanan, dan navigasi pada beragam ukuran layar smartphone.</li>
+    <li><strong>Sinkronisasi data:</strong> Mengonsep alur agar perubahan menu atau stok dari sisi merchant dapat segera tercermin di sisi customer dengan respons yang baik.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek Bitehub memperluas pemahaman saya tentang sistem informasi mobile dan logika bisnis digital. Saya belajar merancang kebutuhan multi-level pengguna, memetakan operasi CRUD untuk toko dan menu, serta menyeimbangkan alur operasional dengan kemudahan penggunaan aplikasi untuk mendukung UMKM lokal.</p>
+    </article>
+    <article data-article="jaringan-multimedia">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Proyek ini dikembangkan untuk mata kuliah Jaringan Multimedia: aplikasi photobooth web untuk analisis undertone kulit dengan arsitektur Single Page Application (SPA) yang memproses alur secara asinkron. Aplikasi menggabungkan pengambilan gambar langsung, analisis sampel warna kulit, dan komposisi hasil komparatif menggunakan FFmpeg.</p>
+  <h4>2. Antarmuka dan Alur Kerja Frontend</h4>
+  <p>Antarmuka responsif dirancang menggunakan Bootstrap dan dikelola melalui HTML, CSS, serta JavaScript.</p>
+  <ul>
+    <li><strong>Akses kamera:</strong> Menggunakan HTML5 Media Capture API melalui <code>navigator.mediaDevices.getUserMedia</code> untuk menampilkan pratinjau kamera secara langsung dengan target resolusi 1280 × 720.</li>
+    <li><strong>Panduan posisi wajah:</strong> Lapisan <code>.face-guide</code> di atas video membantu pengguna memosisikan wajah di tengah area tangkapan.</li>
+    <li><strong>Pengambilan dan pengiriman gambar:</strong> Bingkai video disalin ke <code>&lt;canvas&gt;</code>, orientasi mirroring dibalik untuk mengembalikan posisi gambar, lalu diekspor sebagai Base64 Data URL dan dikirim melalui Fetch POST berformat JSON tanpa memuat ulang halaman.</li>
+  </ul>
+  <h4>3. Pemrosesan Citra dan Analisis Undertone</h4>
+  <p>Backend PHP memproses payload gambar Base64, mendekode data biner, dan menyimpan gambar sementara di <code>Assets/uploads/</code>. Dengan PHP GD, aplikasi memindai sampel 40 × 40 piksel di area tengah gambar dan memisahkan nilai RGB melalui operasi bit-shifting.</p>
+  <p>Untuk mengurangi bias warna yang dapat dipengaruhi Auto White Balance kamera, konsep klasifikasi membandingkan rata-rata kanal merah dan hijau dengan bobot kanal biru yang dikalibrasi sebesar <code>B<sub>avg</sub> × 1.20</code>. Jika <code>(R<sub>avg</sub> + G<sub>avg</sub>) / 2</code> lebih besar dari bobot tersebut, hasil diklasifikasikan sebagai warm; jika tidak, sebagai cool.</p>
+  <h4>4. Pipeline Komposisi Multimedia</h4>
+  <p>Setelah analisis selesai, server menggunakan FFmpeg untuk menyusun gambar hasil. Filter <code>hstack</code> menempatkan dua salinan foto secara berdampingan, lalu overlay warm dan cool diterapkan pada masing-masing sisi untuk menghasilkan tampilan komparatif.</p>
+  <ul>
+    <li>Hasil akhir diekspor sebagai JPG ke direktori <code>Assets/results/</code> dengan nama berbasis timestamp.</li>
+    <li>Referensi file hasil dikirim kembali ke frontend dalam payload JSON untuk ditampilkan kepada pengguna.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Proyek ini memberi saya pengalaman menghubungkan pengambilan media di browser, transmisi data asinkron, pemrosesan citra di sisi server, dan otomasi komposisi menggunakan FFmpeg. Saya belajar bagaimana komponen jaringan dan multimedia dapat dirangkai menjadi aplikasi interaktif yang memberikan hasil visual langsung kepada pengguna.</p>
+    </article>
+    <article data-article="mr-galaxy-mall">
+<h4>1. Ringkasan Proyek</h4>
+  <p>Mall Adventure dikembangkan sebagai proyek mata kuliah Teknologi Mixed Reality. Game berbasis lokasi nyata ini mengambil latar Galaxy Mall 3 Surabaya di lantai 1, 2, dan 3. Proyek ini mengeksplorasi permainan multiplayer yang menyinkronkan interaksi pengguna HoloLens 2 dengan pengguna smartphone Android.</p>
+  <h4>2. Integrasi Imersif Lintas Platform</h4>
+  <ul>
+    <li><strong>Mixed Reality dengan HoloLens 2:</strong> Menempatkan elemen holografis pada lingkungan fisik mall dan memungkinkan interaksi melalui hand tracking.</li>
+    <li><strong>Augmented Reality dengan Android:</strong> Menghadirkan elemen digital melalui kamera dan layar smartphone agar pengalaman dapat diakses tanpa headset khusus.</li>
+    <li><strong>Sinkronisasi spasial:</strong> Menjaga agar posisi objek digital, termasuk peti harta karun di titik-titik mall, konsisten terlihat oleh para pemain.</li>
+  </ul>
+  <h4>3. Alur Pengguna dan Mekanik Permainan</h4>
+  <ul>
+    <li><strong>Pemilihan lantai:</strong> Memilih salah satu dari tiga zona eksplorasi yang mengikuti lantai 1, 2, dan 3 Galaxy Mall 3.</li>
+    <li><strong>Eksplorasi dan berburu harta:</strong> Menjelajahi koridor mall untuk menemukan peti virtual yang ditempatkan sebagai titik interaksi di depan gerai tertentu.</li>
+    <li><strong>Interaksi lintas perangkat:</strong> Membuka peti menggunakan gestur air-tap pada HoloLens 2 atau ketukan layar pada Android.</li>
+    <li><strong>Panel kuis interaktif:</strong> Menampilkan kuis di ruang 3D setelah peti dibuka; pemain memilih jawaban untuk mendapatkan poin.</li>
+  </ul>
+  <h4>4. Sistem Jaringan Multiplayer</h4>
+  <p>Fokus teknis yang saya tangani adalah sinkronisasi status dan interaksi di antara perangkat berbeda.</p>
+  <ul>
+    <li><strong>Sinkronisasi real-time:</strong> Menyelaraskan perubahan status peti dan kemunculan kuis agar dapat dilihat oleh pemain di HoloLens 2 maupun Android.</li>
+    <li><strong>Manajemen state lintas platform:</strong> Menangani perbedaan input dan orientasi ruang antarperangkat agar koordinat serta posisi elemen permainan tetap selaras.</li>
+  </ul>
+  <h4>5. Kesimpulan dan Nilai Pembelajaran</h4>
+  <p>Mall Adventure memberi saya pengalaman memahami tantangan aplikasi multiplayer berbasis lokasi yang menggabungkan ruang fisik dan digital. Proyek ini menekankan pentingnya sinkronisasi jaringan lintas platform, konsistensi spasial, dan desain interaksi yang responsif untuk menghadirkan pengalaman bermain bersama di lingkungan nyata.</p>
+    </article>
+  </template>
+  <template id="archive-articles">
+    <article data-article="berkasir">
+      <h4>1. Ringkasan Proyek</h4>
+      <p><strong>Berkasir</strong> adalah sistem <em>Point of Sale</em> (POS) berbasis Android yang saya kembangkan untuk mendigitalisasi operasional ritel Tabreez Mart. Sistem ini menggantikan pencatatan manual dengan alur digital terpusat, mulai dari transaksi penjualan dan inventaris hingga pengadaan, retur, serta laporan usaha.</p>
+      <h4>2. Arsitektur Satu Codebase, Dua Aplikasi</h4>
+      <p>Dari satu codebase Flutter, saya membangun dua aplikasi dengan antarmuka dan hak akses yang disesuaikan dengan kebutuhan pengguna:</p>
+      <ul>
+        <li><strong>Berkasir Kasir:</strong> Antarmuka transaksi harian yang dirancang agar kasir dapat melayani pelanggan dengan cepat.</li>
+        <li><strong>Berkasir Owner:</strong> Dasbor pemilik untuk memantau metrik bisnis, aktivitas kasir, dan operasional toko.</li>
+      </ul>
+      <p>Cloud Firestore menyinkronkan data secara real-time sehingga transaksi dari aplikasi kasir dapat segera dipantau melalui aplikasi owner.</p>
+      <h4>3. Peran dan Tanggung Jawab</h4>
+      <p>Sebagai <em>Full Stack Developer</em> tunggal, saya menangani siklus pengembangan dari perancangan hingga implementasi. Di sisi frontend, saya merancang UI/UX dan mengembangkan sekitar 30.000 baris kode Dart secara modular. Di sisi backend, saya menyusun struktur data NoSQL, mengonfigurasi Firebase Authentication, serta menerapkan Firebase Security Rules berbasis peran untuk membatasi akses kasir dan pemilik.</p>
+      <h4>4. Fitur Utama</h4>
+      <ul>
+        <li><strong>Kasir dan keamanan:</strong> Login PIN, beberapa akun pada satu perangkat, pengelolaan shift, rekap tutup toko, dan log aktivitas kasir untuk audit.</li>
+        <li><strong>Transaksi POS:</strong> Pencarian produk, filter kategori, pemindaian barcode dengan kamera, serta harga khusus atau kustom per pelanggan.</li>
+        <li><strong>Struk dan perangkat:</strong> Cetak struk melalui printer termal Bluetooth atau kirim struk digital lewat WhatsApp.</li>
+        <li><strong>Inventaris dan pengadaan:</strong> Faktur pembelian supplier, stock opname, retur pelanggan dan supplier, impor produk massal dari CSV, serta pembuatan dan pencetakan label barcode.</li>
+        <li><strong>Laporan:</strong> Riwayat transaksi, pergerakan stok, dan kalkulasi laba rugi yang dapat diekspor sebagai PDF atau Excel.</li>
+      </ul>
+      <h4>5. Teknologi</h4>
+      <p>Aplikasi dibangun dengan Flutter (Dart), Firebase Authentication, dan Cloud Firestore. Integrasi pendukung mencakup printer termal Bluetooth, pemindai barcode/QR, serta generator dokumen PDF dan Excel.</p>
+      <p>Source code disimpan di repositori privat karena aplikasi aktif digunakan di lingkungan produksi Tabreez Mart.</p>
+      <h4>6. Dampak dan Pembelajaran</h4>
+      <p>Berkasir menyatukan proses transaksi, stok, pengadaan, dan pemantauan usaha dalam satu ekosistem digital. Proyek ini menjadi pengalaman membangun produk dari kebutuhan operasional nyata hingga implementasi produksi, sekaligus memperdalam kemampuan saya dalam Flutter, basis data real-time, keamanan berbasis peran, dan perancangan solusi bisnis.</p>
+    </article>
+    <article data-article="pg-697">
+<h4>1. Pengalaman sebagai Dekorator Panggung</h4>
+  <p>Pada tahun 2022, saya dipercaya menjadi bagian dari tim dekorator panggung utama Drama Arena 596 di PM Darussalam Gontor 1. Saya mengerjakan latar panggung dengan melukis secara manual pada lembaran-lembaran triplek berukuran besar, menerjemahkan sketsa menjadi visual panggung berskala meteran.</p>
+  <h4>2. Proses Kreatif di Bawah Tenggat</h4>
+  <p>Persiapan berlangsung dengan tenggat yang ketat dan menuntut ketelitian. Kami mengolah gradasi warna agar detail lukisan tetap terlihat saat terkena pencahayaan panggung, serta bekerja bersama dari pagi hingga larut malam untuk menyelesaikan setiap bagian dekorasi.</p>
+  <ul>
+    <li><strong>Pengecatan latar:</strong> Mengembangkan sketsa menjadi lukisan manual berukuran besar dengan komposisi dan gradasi warna yang sesuai konsep pertunjukan.</li>
+    <li><strong>Properti tiga dimensi:</strong> Membantu merancang properti panggung yang dapat dipindahkan dengan cepat saat pergantian babak.</li>
+    <li><strong>Kolaborasi tim:</strong> Berkoordinasi dan bekerja bahu-membahu agar seluruh elemen dekorasi siap digunakan pada hari pertunjukan.</li>
+  </ul>
+  <h4>3. Hasil dan Nilai Pembelajaran</h4>
+  <p>Menyaksikan dekorasi yang kami bangun dari awal tampil di bawah sorot lampu dan disaksikan ribuan penonton menjadi momen yang membanggakan. Pengalaman ini mengasah kreativitas, kedisiplinan, ketangguhan dalam menghadapi tekanan, serta kemampuan berkolaborasi untuk memenuhi tenggat produksi panggung.</p>
+    </article>
+    <article data-article="pg-698">
+<h4>1. Pengalaman sebagai Dekorator Utama</h4>
+  <p>Saya dipercaya menjadi dekorator utama Panggung Gembira 697 di PM Darul Ma'rifat Gontor Kampus 3, Kediri. Sebagai puncak pergelaran seni santri kelas 6, acara ini menuntut skala visual dan kemegahan panggung yang lebih besar. Tanggung jawab saya mencakup perancangan konsep visual arsitektur panggung, bukan hanya pengerjaan lukisan.</p>
+  <h4>2. Perancangan dan Pembangunan Panggung</h4>
+  <p>Kami merancang tata ruang tiga dimensi dengan memadukan lukisan latar manual berskala raksasa dan instalasi fisik yang dinamis. Proses persiapan meliputi pemotongan triplek, penyusunan struktur penopang, serta peracikan gradasi warna untuk menciptakan efek kedalaman ruang yang tampak kuat di bawah lampu sorot.</p>
+  <h4>3. Hasil dan Nilai Pembelajaran</h4>
+  <p>Walau persiapan menguras energi dan berlangsung di bawah tekanan tenggat, melihat panggung yang dibangun dari nol berdiri megah pada malam pertunjukan menjadi kebanggaan tersendiri. Proyek ini mematangkan kemampuan saya dalam mengeksplorasi estetika ruang, mengelola risiko saat membangun elemen panggung, serta memimpin dan berkolaborasi dengan tim kreatif berskala besar.</p>
+    </article>
+    <article data-article="pionering">
+<h4>1. Peran sebagai Ketua Pembimbing</h4>
+  <p>Saat mengemban amanah sebagai Guru Pengabdian di PM Tgk. Chiek Oemar Diyan, Aceh Besar, saya dipercaya menjadi Ketua Pembimbing Panggung Gembira Gretasha Generation. Peran ini membawa saya dari eksekutor dekorasi menjadi mentor dan manajer proyek kreatif yang membimbing para santri.</p>
+  <h4>2. Membimbing Proses Kreatif</h4>
+  <p>Saya mendampingi santri sejak inisiasi ide dan penyusunan konsep visual arsitektur panggung hingga penerapan teknik pencampuran warna dan efisiensi bahan di lapangan. Proses pendampingan menuntut kesabaran dan komunikasi yang baik, terutama untuk menjaga semangat serta kedisiplinan tim saat menghadapi kejenuhan dan tenggat yang ketat.</p>
+  <h4>3. Hasil dan Nilai Pembelajaran</h4>
+  <p>Melihat para santri mewujudkan panggung dengan tangan mereka sendiri dan menyukseskan acara menjadi kepuasan tersendiri. Pengalaman ini memperkuat kemampuan saya dalam manajemen tim, kepemimpinan, dan komunikasi interpersonal, sekaligus memberi pengalaman nyata dalam mentransfer pengetahuan serta standar estetika kepada generasi berikutnya.</p>
+    </article>
+    <article data-article="jaringan-multimedia">
+<h4>1. Peran sebagai Dekorator Utama</h4>
+  <p>Saat duduk di kelas 6 di PM Darul Ma'rifat Gontor Kampus 3, Kediri, saya dipercaya menjadi dekorator utama dalam menyukseskan Lomba Perkemahan Khutbatul Arsy (LPKA). Saya merancang dan mengeksekusi identitas visual perkemahan, mulai dari gate utama dan gapura pameran hingga baliho besar sebagai latar dekoratif acara.</p>
+  <h4>2. Persiapan dan Operasional Kegiatan</h4>
+  <p>Pembangunan instalasi luar ruangan menuntut ketangkasan fisik dan pengelolaan waktu yang ketat agar semuanya siap sebelum tenda didirikan. Saat perlombaan berlangsung, tanggung jawab saya berlanjut dengan menjaga dan mengelola kedai pramuka sebagai pusat logistik serta kebutuhan harian peserta.</p>
+  <h4>3. Hasil dan Nilai Pembelajaran</h4>
+  <p>Menjalankan peran sebagai kreator visual sekaligus operator lapangan melatih efisiensi kerja dan tanggung jawab berlapis. Pengalaman ini juga mengasah komunikasi interpersonal dan kemampuan beradaptasi dengan ritme kegiatan yang dinamis.</p>
+    </article>
+    <article data-article="mr">
+<h4>1. Tanggung Jawab sebagai Pengawas Lomba</h4>
+  <p>Saya dipercaya menjadi Pengawas Lomba Pioneering Mingguan, berperan sebagai evaluator yang tegas, adil, dan jeli dalam mengawasi perlombaan di lapangan. Saya memastikan setiap regu mengikuti aturan dan batas waktu sejak perlombaan dimulai.</p>
+  <h4>2. Penilaian Konstruksi dan Keamanan</h4>
+  <p>Penilaian mencakup kualitas bangunan menara atau jembatan yang didirikan peserta. Saya memeriksa kekuatan ikatan simpul, ketepatan sudut sambungan tongkat, serta fungsionalitas dan keamanan struktur pioneering.</p>
+  <h4>3. Nilai Pembelajaran</h4>
+  <p>Peran ini melatih ketelitian dalam mengevaluasi konstruksi fisik, manajemen risiko, objektivitas dalam mengambil keputusan, dan ketegasan menegakkan aturan di tengah kompetisi yang dinamis.</p>
+    </article>
+  </template>
+  <script src="script.js"></script>
+</body>
+</html>
